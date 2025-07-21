@@ -153,7 +153,7 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-116538728-1"></script>
         Blake Tolmie
        </h1>
        <p>
-        I’m a third-year Mechatronics Engineering student at the University of Canterbury. Over summer, I completed a research internship at the Auckland Bioengineering Institute, where I designed a soft valve for MHD soft robotics using electropermanent magnets, advised by <a href="https://profiles.auckland.ac.nz/b-ruddy">Bryan Ruddy</a>. Outside of my studies, I work as a campus tour guide, play the banjo, and run marathons. For a full list of my projects, see the Projects section.
+        I’m a third-year Mechatronics Engineering student at the <a href="https://www.canterbury.ac.nz/" target="_blank">University of Canterbury</a>. Over summer, I completed a research internship at the <a href="https://www.auckland.ac.nz/en/abi.html">Auckland Bioengineering Institute</a>, where I designed a soft valve for MHD soft robotics using electropermanent magnets, advised by <a href="https://profiles.auckland.ac.nz/b-ruddy">Bryan Ruddy</a>. Outside of my studies, I work as a campus tour guide, play the banjo, and run marathons. For a full list of my projects, see the Projects section.
 
 
        </p>
@@ -186,11 +186,14 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-116538728-1"></script>
         
         My travel experiences across the world to the countries like U.S., Mexico, China, and Australia has further sharpened my ability to collaborate with people from all walks of life, think on my feet and approach challenges creatively. What drives me isn't just the challenge of making things work, but the responsibility of making things that matter. I want to design tools and technologies that empower others - "things that make things" - while also being mindful of the people and environments they affect. 
         <br><br>
-        I’m currently studying Mechatronics Engineering at <a href="https://www.canterbury.ac.nz/" target="_blank">University of Canterbury</a>, where I’ve learned to design, build, and integrate systems across mechanics, electronics, and embedded software through various projects. These projects include writing real-time C firmware for STM32 microcontrollers, designing and simulating PCBs, integrating sensors and displays via I²C and SPI, and implementing control algorithms for dynamic systems. I’ve also developed CAD models in SolidWorks and Fusion 360, worked with 3D printing and CAM workflows, and gained hands-on skills in debugging, version control (Git), and system-level design. These experiences have given me practical skills in system-level thinking, debugging with oscilloscopes and logic analyzers, version control with Git, and cross-disciplinary collaboration in complex mechatronic projects.
+        I’m currently studying Mechatronics Engineering at University of Canterbury, where I’ve learned to design, build, and integrate systems across mechanics, electronics, and embedded software through various projects. These projects include writing real-time C firmware for STM32 microcontrollers, designing and simulating PCBs, integrating sensors and displays via I²C and SPI, and implementing control algorithms for dynamic systems. I’ve also developed CAD models in SolidWorks and Fusion 360, worked with 3D printing and CAM workflows, and gained hands-on skills in debugging, version control (Git), and system-level design. These experiences have given me practical skills in system-level thinking, debugging with oscilloscopes and logic analyzers, version control with Git, and cross-disciplinary collaboration in complex mechatronic projects.
         </p>
       </td>
      </tr>
     </table>
+
+
+
     <!-- Template -->
     <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
       <tr>
@@ -211,6 +214,8 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-116538728-1"></script>
       </tr>
      </table> -->
 
+
+
     <!-- Highlight Research -->
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tr>
@@ -219,7 +224,6 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-116538728-1"></script>
            Research (Selected Projects)
            <hr>
            
-
 
 
 <div class="col-sm-8 col-md-4 col-lg-3">
@@ -285,61 +289,123 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-116538728-1"></script>
         
         <div class="carousel__track">
           <ul>
+
+
             
             <div class="carousel__slide">
-                VIOLA, CoRL 2022
-                <!-- <li class="carousel__slide" style="background-image: url('');"></li> -->
-                <!-- <img src=""/> -->
-                <div class="carousel_video">
-                <video class="img-fluid" width="60%" autoplay loop muted>
-                    <source src="/images/viola_coffee.mp4" type="video/mp4" />
-                </video>
+              <h3 style="text-align: center;">Auckland Bioengineering Research Poster</h3>
+                <div id="pdfViewer" style="width: 100%; height: 100%; overflow: auto;"></div>
+            </div>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+            <script>
+              const url = '/images/Blake_Tolmie_ABI_Poster.pdf'; // Path to your PDF file
+              const container = document.getElementById('pdfViewer');
+
+              const loadingTask = pdfjsLib.getDocument(url);
+              loadingTask.promise.then(pdf => {
+                for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+                  pdf.getPage(pageNum).then(page => {
+                    const viewport = page.getViewport({ scale: 1 }); /*0.305*/
+                    const canvas = document.createElement('canvas');
+                    const context = canvas.getContext('2d');
+                    canvas.height = viewport.height;
+                    canvas.width = viewport.width;
+
+                    container.appendChild(canvas);
+
+                    const renderTask = page.render({ canvasContext: context, viewport: viewport });
+                      // Apply CSS scaling to visually reduce size
+                      canvas.style.transform = 'scale(0.3)'; // Scale down visually
+                      canvas.style.transformOrigin = 'top left'; // Ensure scaling starts from the top-left corner
+
+                   renderTask.promise.then(() => {
+                    // Wait 1 second before starting auto-scroll
+                      setTimeout(() => {
+                        setInterval(() => {
+                          container.scrollBy(0, 0.5); // Adjust scroll speed (scroll down by 0.5 pixels)
+                        }, 100); // Scroll every 100 milliseconds
+                      }, 1000); // Wait 1 second before starting
+                    });
+                  });
+                }
+              });
+            </script>
+      
+
+            <div class="carousel__slide">
+              Line Following Robot
+              <div class="carousel_video">
+                <iframe 
+                  class="img-fluid" 
+                  width="100%" 
+                  height="100%" 
+                  src="https://www.youtube.com/embed/FtZBa48xyP8?autoplay=1&mute=1&loop=1&playlist=FtZBa48xyP8&controls=0&rel=0&showinfo=0"
+                   
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen
+                  style="pointer-events: none;">
+                </iframe>
               </div>
             </div>
+
+
+            <div class="carousel__slide">
+              UC Flight Club
+              <div class="carousel_video">
+                <iframe 
+                  class="img-fluid" 
+                  width="100%" 
+                  height="100%" 
+                  src="https://www.youtube.com/embed/ln7Vwi-D4S0?autoplay=1&mute=1&loop=1&playlist=ln7Vwi-D4S0&controls=0&rel=0&showinfo=0"
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen
+                  style="pointer-events: none;">
+                </iframe>
+              </div>
+            </div>
+
             
             <div class="carousel__slide">
-                VIOLA, CoRL 2022
-                <!-- <li class="carousel__slide" style="background-image: url('');"></li> -->
-                <!-- <img src=""/> -->
-                <div class="carousel_video">
-                <video class="img-fluid" width="60%" autoplay loop muted>
-                    <source src="/images/viola_dining.mp4" type="video/mp4" />
-                </video>
+              <h3 style="text-align: center;">Pick and Place Prototype</h3>
+              <div class="carousel_video">
+                <iframe 
+                  class="img-fluid" 
+                  width="100%" 
+                  height="100%" 
+                  src="https://www.youtube.com/embed/WZPeCcrsdzY?autoplay=1&mute=1&loop=1&playlist=WZPeCcrsdzY&controls=0&rel=0&showinfo=0"
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen
+                  style="pointer-events: none;">
+                </iframe>
               </div>
             </div>
-            
+          
             <div class="carousel__slide">
-                OKAMI, CoRL 2024
-                <!-- <li class="carousel__slide" style="background-image: url('');"></li> -->
-                <!-- <img src=""/> -->
-                <div class="carousel_video">
-                <video class="img-fluid" width="60%" autoplay loop muted>
-                    <source src="/images/okami_demo.mp4" type="video/mp4" />
-                </video>
+              <h3 style="text-align: center;">Flying my drone in Marlborough Sounds</h3>
+              <div class="carousel_video">
+                <iframe 
+                  class="img-fluid" 
+                  width="100%" 
+                  height="100%" 
+                  src="https://www.youtube.com/embed/SsaPzd6Pu9Q?autoplay=1&mute=1&loop=1&playlist=SsaPzd6Pu9Q&controls=0&rel=0&showinfo=0"
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen
+                  style="pointer-events: none;">
+                </iframe>
               </div>
             </div>
+
+
             
-            <div class="carousel__slide">
-                BUMBLE, ArXiv
-                <!-- <li class="carousel__slide" style="background-image: url('');"></li> -->
-                <!-- <img src=""/> -->
-                <div class="carousel_video">
-                <video class="img-fluid" width="60%" autoplay loop muted>
-                    <source src="/images/bumble_demo.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-            
-            <div class="carousel__slide">
-                ORION, ArXiv
-                <!-- <li class="carousel__slide" style="background-image: url('');"></li> -->
-                <!-- <img src=""/> -->
-                <div class="carousel_video">
-                <video class="img-fluid" width="60%" autoplay loop muted>
-                    <source src="/images/orion_llama.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
             
           </ul>
         </div>
@@ -601,6 +667,25 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-116538728-1"></script>
   border-radius:5%;
   overflow:hidden;
 } */
+
+/* Added to ensure the video fits within the carousel slide */
+.carousel_video {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.carousel_video iframe {
+  width: 100%;
+  height: 200%;
+  object-fit: contain; /* Ensures the video fills the container */
+  border: none;
+}
+
+
 .carousel__slide .overlay {height: 100%;}
 .carousel--thumb .carousel__indicator {
   height: 30px;
