@@ -1,0 +1,2651 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <title>Yifeng Zhu</title>
+
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+  <meta name="author" content="Yifeng Zhu" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet"  type="text/css" href="/mdb.min.css" > -->
+  <link rel="stylesheet" type="text/css" href="/style.css" />
+  <link rel="canonical" href="https://zhuyifengzju.github.io/">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300; -->
+<!-- 	    700&display=swap" rel="stylesheet" type="text/css"> -->
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+</head>
+
+
+
+
+
+<script async
+src="https://www.googletagmanager.com/gtag/js?id=UA-116538728-1"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-116538728-1');
+  </script>
+	
+  <script>
+    document.querySelector('.dropbtn').addEventListener('click', function() {
+        document.querySelector('.dropdown-content').classList.toggle('show');
+    });
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+
+
+
+<style>
+
+
+.floating-menu {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #7baadc;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+.dropbtn {
+    background-color: #7baadc;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #090808;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1001;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd!important;}
+</style>
+
+  <body>
+    <div>
+ <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tr style="padding:0px">
+   <td style="padding:0px">
+    <style>
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: white;
+  color: gray;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: white;
+  color: black;
+}
+
+.topnav {
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+
+<div class="topnav">
+<nav>
+  
+    <a href="https://cs.utexas.edu/~yifengz/dissertation.html" >
+      Dissertation
+    </a>
+    
+    <a href="/" class="active">
+      Home
+    </a>
+    
+</nav>
+</div>
+
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+     <tr style="padding:0px">
+      <td style="padding:2.5%;width:65%;vertical-align:middle">
+       <h1>
+        Yifeng Zhu 朱毅枫
+       </h1>
+       <p>
+        I received my Ph.D. in Computer Science at
+		the University of Texas at Austin, co-advised by
+		Prof.
+        <a href="https://cs.utexas.edu/~pstone">
+         Peter
+		Stone
+        </a>
+        and
+		Prof.
+        <a href="https://cs.utexas.edu/~yukez">
+         Yuke
+		Zhu
+        </a>
+        . I have also spent my time in Carnegie Mellon University as a visiting student and was fortunate to work with Prof. <a href="https://www.cs.cmu.edu/~mmv/">Manuela Veloso</a>.
+        <!-- I received my B.Eng in Automation and B.A. in English from Zhejiang University. -->
+    <!-- My research lies on the intersection of robot learning, robot control, and robot planning.  -->
+     <!-- My research focus on studying generalist, intelligent systems.  -->
+    For full list of my publications, please see my google scholar profile. 
+
+    <!-- <p>I am on the job market 2024-2025.</p> -->
+        <!-- I am interested in general-purpose robot autonomy, especially its social impact to our daily life in all aspects. -->
+       </p>
+       <!-- <p> -->
+       <!--   I have an MS in Computer Science (AI focus) from <a href="http://cs.stanford.edu">Stanford University</a>, where I was a research assistant for <a href="http://svl.stanford.edu/">Silvio Savarese</a> and a teaching assistant for <a href="http://svl.stanford.edu/">Fei-Fei Li</a> (<a href="http://vision.stanford.edu/teaching/cs131_fall1617/">CS131</a> & <a href="http://cs231n.stanford.edu/2017/">CS231N</a>). I have a BS in EECS from <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I worked in <a href="https://people.eecs.berkeley.edu/~pister/">Kris Pister's</a> lab. -->
+       <!-- </p> -->
+       <p style="text-align:center">
+        <a href="mailto:yifeng.zhu@utexas.edu" target="_blank">
+         Email
+        </a>
+        /
+        <!-- <a href="https://github.com/zhuyifengzju">GitHub</a> &nbsp;/&nbsp; -->
+        <a href="https://scholar.google.com/citations?user=LIQL3lYAAAAJ&amp;hl=en&amp;oi=ao">
+         Google Scholar
+        </a>
+        <!-- &nbsp;/&nbsp; -->
+        <!-- <a href="http://zhuyifengzju.github.io/files/ZHUYifeng_CV.pdf"> CV </a> -->
+       </p>
+      </td>
+      <td style="padding:2.5%;width:35%;max-width:40%;margin-bottom:-30px">
+       <!-- <img style="width:100%;max-width:100%" alt="profile photo" src="images/profile.jpeg"> -->
+       <img alt="profile photo" src="images/profile_professional_1x1.jpg" style="width:100%;max-width:100%"/>
+      </td>
+     </tr>
+    </table>
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+     <tr>
+      <td style="padding:2.5%;width:100%;vertical-align:middle">
+       <h2>
+        Education
+       </h2>
+       <hr/>
+       <ul>
+        <li>
+         2019 - 2025, Ph.D. program in Computer Science, The University of Texas at Austin
+        </li>
+        <li>
+         2014 - 2018, B.Eng. in Automation &amp; B.A. in English Language and Literature, Zhejiang University
+        </li>
+        <!-- <li>
+         2017 - 2018, Visiting Student, Machine Learning Department, Carnegie Mellon
+		  University
+        </li> -->
+       </ul>
+      </td>
+     </tr>
+    </table>
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <tr>
+       <td style="padding:2.5%;width:100%;vertical-align:middle">
+        <h2>
+         Exchange/Visiting Experiences
+        </h2>
+        <hr/>
+        <ul>
+         <li>
+          2017 - 2018, Carnegie Mellon University
+         </li>
+         <li>
+          2017, UCLA
+         </li>
+        </ul>
+       </td>
+      </tr>
+     </table>
+
+    <!-- Highlight Research -->
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tr>
+         <td style="padding:2.5%;width:100%;vertical-align:middle">
+          <h2>
+           Research (Selected Projects)
+           <hr>
+           
+
+
+
+<div class="col-sm-8 col-md-4 col-lg-3">
+<div class="carousel__holder">
+    <div id="carousel-1" class="carousel">
+
+        
+          <input class="carousel__activator" type="radio" name="carousel-1" id="-1a" checked="checked" />
+        
+          <input class="carousel__activator" type="radio" name="carousel-1" id="-1b"  />
+        
+          <input class="carousel__activator" type="radio" name="carousel-1" id="-1c"  />
+        
+          <input class="carousel__activator" type="radio" name="carousel-1" id="-1d"  />
+        
+          <input class="carousel__activator" type="radio" name="carousel-1" id="-1e"  />
+        
+        
+          
+          
+          
+          
+          <div class="carousel__controls">
+              <label class="carousel__control carousel__control--backward" for="-1e"></label>
+              <label class="carousel__control carousel__control--forward" for="-1b"></label>
+          </div>
+        
+          
+          
+          
+          
+          <div class="carousel__controls">
+              <label class="carousel__control carousel__control--backward" for="-1a"></label>
+              <label class="carousel__control carousel__control--forward" for="-1c"></label>
+          </div>
+        
+          
+          
+          
+          
+          <div class="carousel__controls">
+              <label class="carousel__control carousel__control--backward" for="-1b"></label>
+              <label class="carousel__control carousel__control--forward" for="-1d"></label>
+          </div>
+        
+          
+          
+          
+          
+          <div class="carousel__controls">
+              <label class="carousel__control carousel__control--backward" for="-1c"></label>
+              <label class="carousel__control carousel__control--forward" for="-1e"></label>
+          </div>
+        
+          
+          
+          
+          
+          <div class="carousel__controls">
+              <label class="carousel__control carousel__control--backward" for="-1d"></label>
+              <label class="carousel__control carousel__control--forward" for="-1a"></label>
+          </div>
+        
+        <div class="carousel__track">
+          <ul>
+            
+            <div class="carousel__slide">
+                VIOLA, CoRL 2022
+                <!-- <li class="carousel__slide" style="background-image: url('');"></li> -->
+                <!-- <img src=""/> -->
+                <div class="carousel_video">
+                <video class="img-fluid" width="60%" autoplay loop muted>
+                    <source src="/images/viola_coffee.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+            
+            <div class="carousel__slide">
+                VIOLA, CoRL 2022
+                <!-- <li class="carousel__slide" style="background-image: url('');"></li> -->
+                <!-- <img src=""/> -->
+                <div class="carousel_video">
+                <video class="img-fluid" width="60%" autoplay loop muted>
+                    <source src="/images/viola_dining.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+            
+            <div class="carousel__slide">
+                OKAMI, CoRL 2024
+                <!-- <li class="carousel__slide" style="background-image: url('');"></li> -->
+                <!-- <img src=""/> -->
+                <div class="carousel_video">
+                <video class="img-fluid" width="60%" autoplay loop muted>
+                    <source src="/images/okami_demo.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+            
+            <div class="carousel__slide">
+                BUMBLE, ArXiv
+                <!-- <li class="carousel__slide" style="background-image: url('');"></li> -->
+                <!-- <img src=""/> -->
+                <div class="carousel_video">
+                <video class="img-fluid" width="60%" autoplay loop muted>
+                    <source src="/images/bumble_demo.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+            
+            <div class="carousel__slide">
+                ORION, ArXiv
+                <!-- <li class="carousel__slide" style="background-image: url('');"></li> -->
+                <!-- <img src=""/> -->
+                <div class="carousel_video">
+                <video class="img-fluid" width="60%" autoplay loop muted>
+                    <source src="/images/orion_llama.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+            
+          </ul>
+        </div>
+        <div class="carousel__indicators">
+            
+              <label class="carousel__indicator" for="-1a"></label>
+            
+              <label class="carousel__indicator" for="-1b"></label>
+            
+              <label class="carousel__indicator" for="-1c"></label>
+            
+              <label class="carousel__indicator" for="-1d"></label>
+            
+              <label class="carousel__indicator" for="-1e"></label>
+            
+        </div>
+    </div>
+</div>
+</div>
+
+<style>
+
+.carousel__holder {width: 100%; position: relative; padding-bottom: 45%; margin: 1rem 0 1rem;}
+.carousel {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  position: absolute;
+  padding: 0;
+}
+.carousel__controls,
+.carousel__activator {
+  display: none;
+}
+
+.carousel__activator:nth-of-type(1):checked ~ .carousel__track {
+  -webkit-transform: translateX(-000%);
+          transform: translateX(-000%);
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__slide:nth-of-type(1) {
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__controls:nth-of-type(1) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) {
+  opacity: 1;
+}
+
+.carousel__activator:nth-of-type(2):checked ~ .carousel__track {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__slide:nth-of-type(2) {
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__controls:nth-of-type(2) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) {
+  opacity: 1;
+}
+
+.carousel__activator:nth-of-type(3):checked ~ .carousel__track {
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__slide:nth-of-type(3) {
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__controls:nth-of-type(3) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) {
+  opacity: 1;
+}
+
+.carousel__activator:nth-of-type(4):checked ~ .carousel__track {
+  -webkit-transform: translateX(-300%);
+          transform: translateX(-300%);
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__slide:nth-of-type(4) {
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__controls:nth-of-type(4) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) {
+  opacity: 1;
+}
+
+.carousel__activator:nth-of-type(5):checked ~ .carousel__track {
+  -webkit-transform: translateX(-400%);
+          transform: translateX(-400%);
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__slide:nth-of-type(5) {
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__controls:nth-of-type(5) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) {
+  opacity: 1;
+}
+
+
+.carousel__control {
+  height: 30px;
+  width: 30px;
+  margin-top: -15px;
+  top: 50%;
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  border-width: 5px 5px 0 0;
+  border-style: solid;
+  border-color: #d0d0d0; # #fafafa;
+  opacity: 0.35;
+  opacity: 1;
+  outline: 0;
+  z-index: 3;
+}
+.carousel__control:hover {
+  opacity: 1;
+}
+.carousel__control--backward {
+  left: 20px;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+.carousel__control--forward {
+  right: 20px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.carousel__indicators {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  text-align: center;
+}
+.carousel__indicator {
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  display: inline-block;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0.35;
+  margin: 0 2.5px 0 2.5px;
+  background-color: #303030 !important;
+}
+.carousel__indicator:hover {
+  opacity: 0.75;
+}
+.carousel__track {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  transition: -webkit-transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+}
+.carousel__track .carousel__slide {
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.carousel__track .carousel__slide:nth-of-type(1) {
+  -webkit-transform: translateX(000%);
+          transform: translateX(000%);
+}
+
+.carousel__track .carousel__slide:nth-of-type(2) {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.carousel__track .carousel__slide:nth-of-type(3) {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+}
+
+.carousel__track .carousel__slide:nth-of-type(4) {
+  -webkit-transform: translateX(300%);
+          transform: translateX(300%);
+}
+
+.carousel__track .carousel__slide:nth-of-type(5) {
+  -webkit-transform: translateX(400%);
+          transform: translateX(400%);
+}
+
+
+.carousel--scale .carousel__slide {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.carousel__slide {
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+}
+/* .carousel_video{
+  border-radius:5%;
+  overflow:hidden;
+} */
+.carousel__slide .overlay {height: 100%;}
+.carousel--thumb .carousel__indicator {
+  height: 30px;
+  width: 30px;
+}
+.carousel__indicator {
+  background-color: #fafafa;
+}
+
+.carousel__slide:nth-of-type(1),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel__slide:nth-of-type(2),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(2) {
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel__slide:nth-of-type(3),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3) {
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel__slide:nth-of-type(4),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(4) {
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel__slide:nth-of-type(5),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(5) {
+  background-size: cover;
+  background-position: center;
+}
+
+</style>
+
+<script>
+  function isVisible(el) {
+        while (el) {
+            if (el === document) {
+                return true;
+            }
+
+            var $style = window.getComputedStyle(el, null);
+
+            if (!el) {
+                return false;
+            } else if (!$style) {
+                return false;
+            } else if ($style.display === 'none') {
+                return false;
+            } else if ($style.visibility === 'hidden') {
+                return false;
+            } else if (+$style.opacity === 0) {
+                return false;
+            } else if (($style.display === 'block' || $style.display === 'inline-block') &&
+                $style.height === '0px' && $style.overflow === 'hidden') {
+                return false;
+            } else {
+                return $style.position === 'fixed' || isVisible(el.parentNode);
+            }
+        }
+  }
+  
+  setInterval(function(){
+    var j=0;
+    var elements = document.querySelectorAll('#carousel-1 .carousel__control--forward');
+    for(i=(elements.length - 1);i>-1;i--) {
+      if(isVisible(elements[i])) j=i;
+    }
+    elements[j].click();
+  },30000);
+  
+</script>
+          </h2>
+          <hr/>
+         </td>
+        </tr>
+       </table>
+
+       
+       
+       
+       <!-- Get the current second and calculate the rotation offset -->
+       
+       
+       
+       <!-- Rotate the list -->
+       
+       
+       
+       
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tr>
+         <td style="padding:2.5%;width:100%;vertical-align:middle">
+          <!-- <h3 id="single-video-imitation">
+           Open-World Imitation From Observation
+          </h3> -->
+          <p>
+          </p>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+           
+             
+             
+             
+             
+             
+             
+                
+           <tr class="pub-entry">
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+             <img alt="" src="/images/zhu-corl-okami.png" style="width:auto; height:auto; max-width:100%;">
+             </img>
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+             <h4>
+              <strong>
+               Okami: Teaching humanoid robots manipulation skills through single video imitation
+              </strong>
+             </h4>
+             <br/>
+             <a href="https://lijinhan21.github.io/">Jinhan Li</a>, <strong>Yifeng Zhu*</strong>, <a href="">Yuqi Xie*</a>, <a href="https://zhenyujiang.me/">Zhenyu Jiang*</a>, <a href="https://mingyoseo.com/">Mingyo Seo</a>, <a href="https://geopavlakos.github.io/">Georgios Pavlakos</a>,  <a href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>
+                             
+                 
+             <br/>
+             <em>
+              Conference on Robot Learning (CoRL) (oral presentation)
+             </em>
+             ,  2024
+                 
+             <br/>
+             
+             <a href="https://ut-austin-rpl.github.io/OKAMI/">
+              <i aria-hidden="true" class="fa fa-users">
+              </i>
+              project
+             </a>
+             	      
+                 
+             <a href="https://arxiv.org/abs/2410.11792">
+              <i aria-hidden="true" class="fa fa-book">
+              </i>
+              paper
+             </a>
+             
+                 
+                 
+             <a href="https://youtu.be/P8WwXSnKq1g?si=zUkqYmtiIHuw_Ida">
+              <i aria-hidden="true" class="fa fa-video-camera">
+              </i>
+              video
+             </a>
+             
+                 
+                 
+             <a href="/bibtex/okami.txt">
+              <i aria-hidden="true" class="fa fa-file">
+              </i>
+              bibtex
+             </a>
+             
+                 
+                 
+                 
+             <p>
+             </p>
+             
+
+            </td>
+           </tr>
+           
+             
+             
+             
+             
+             
+             
+             
+             
+             
+                
+           <tr class="pub-entry">
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+             <img alt="" src="/images/zhu-arxiv-orion.png" style="width:auto; height:auto; max-width:100%;">
+             </img>
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+             <h4>
+              <strong>
+               ORION: Vision-based Manipulation from Single Human Video with Open-World Object Graphs
+              </strong>
+             </h4>
+             <br/>
+             <strong>Yifeng Zhu</strong>, <a href="https://www.linkedin.com/in/arisrei-lim/">Arisrei Lim</a>, <a href="https://www.cs.utexas.edu/~pstone">Peter Stone</a>, <a href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>
+                             
+                 
+             <br/>
+             <em>
+              Technical Reports
+             </em>
+             ,  2024
+                 
+             <br/>
+             
+             <a href="https://ut-austin-rpl.github.io/ORION-release/">
+              <i aria-hidden="true" class="fa fa-users">
+              </i>
+              project
+             </a>
+             	      
+                 
+             <a href="https://arxiv.org/abs/2405.20321">
+              <i aria-hidden="true" class="fa fa-book">
+              </i>
+              paper
+             </a>
+             
+                 
+                 
+             <a href="https://youtu.be/fuIoUwKf_jw?si=lo1iWXO-bo2yVen5">
+              <i aria-hidden="true" class="fa fa-video-camera">
+              </i>
+              video
+             </a>
+             
+                 
+                 
+             <a href="/bibtex/orion.txt">
+              <i aria-hidden="true" class="fa fa-file">
+              </i>
+              bibtex
+             </a>
+             
+                 
+                 
+                 
+             <p>
+             </p>
+             
+
+            </td>
+           </tr>
+           
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+          </table>
+         </td>
+        </tr>
+       </table>
+       
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tr>
+         <td style="padding:2.5%;width:100%;vertical-align:middle">
+          <!-- <h3 id="object-centric">
+           Object-Centric Imitation Learning
+          </h3> -->
+          <p>
+          </p>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+           
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+                
+           <tr class="pub-entry">
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+             <img alt="" src="/images/zhu-corl-groot.png" style="width:auto; height:auto; max-width:100%;">
+             </img>
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+             <h4>
+              <strong>
+               GROOT: Learning Generalizable Manipulation Policies with Object-Centric 3D Representations
+              </strong>
+             </h4>
+             <br/>
+             <strong>Yifeng Zhu</strong>, <a href="https://zhenyujiang.me/"> Zhenyu Jiang</a>, <a href="https://www.cs.utexas.edu/~pstone">Peter Stone</a>, <a href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>
+                             
+                 
+             <br/>
+             <em>
+              Conference on Robot Learning (CoRL)
+             </em>
+             ,  2023
+                 
+             <br/>
+             
+             <a href="https://ut-austin-rpl.github.io/GROOT/">
+              <i aria-hidden="true" class="fa fa-users">
+              </i>
+              project
+             </a>
+             	      
+                 
+             <a href="http://arxiv.org/abs/2310.14386">
+              <i aria-hidden="true" class="fa fa-book">
+              </i>
+              paper
+             </a>
+             
+                 
+                 
+             <a href="https://www.youtube.com/watch?v=T_wW-Mzt49M">
+              <i aria-hidden="true" class="fa fa-video-camera">
+              </i>
+              video
+             </a>
+             
+                 
+             <a href="https://github.com/UT-Austin-RPL/GROOT">
+              <i aria-hidden="true" class="fa fa-code">
+              </i>
+              code
+             </a>
+             
+                 
+             <a href="/bibtex/groot.txt">
+              <i aria-hidden="true" class="fa fa-file">
+              </i>
+              bibtex
+             </a>
+             
+                 
+             <a href="/files/GROOT_poster.pdf">
+              <i class="fa fa-desktop">
+              </i>
+              poster
+             </a>
+             
+                 
+                 
+             <p>
+             </p>
+             
+
+            </td>
+           </tr>
+           
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+                
+           <tr class="pub-entry">
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+             <img alt="" src="/images/zhu-corl-viola.png" style="width:auto; height:auto; max-width:100%;">
+             </img>
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+             <h4>
+              <strong>
+               VIOLA: Imitation Learning for Vision-Based Manipulation with Object Proposal Priors
+              </strong>
+             </h4>
+             <br/>
+             <strong>Yifeng Zhu</strong>, Abhishek Joshi, <a href="https://www.cs.utexas.edu/~pstone">Peter Stone</a>, <a href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>
+                             
+                 
+             <br/>
+             <em>
+              Conference on Robot Learning (CoRL)
+             </em>
+             ,  2022
+                 
+             <br/>
+             
+             <a href="https://ut-austin-rpl.github.io/VIOLA/">
+              <i aria-hidden="true" class="fa fa-users">
+              </i>
+              project
+             </a>
+             	      
+                 
+             <a href="https://arxiv.org/abs/2210.11339">
+              <i aria-hidden="true" class="fa fa-book">
+              </i>
+              paper
+             </a>
+             
+                 
+                 
+                 
+             <a href="https://github.com/UT-Austin-RPL/VIOLA">
+              <i aria-hidden="true" class="fa fa-code">
+              </i>
+              code
+             </a>
+             
+                 
+             <a href="/bibtex/viola.txt">
+              <i aria-hidden="true" class="fa fa-file">
+              </i>
+              bibtex
+             </a>
+             
+                 
+             <a href="/files/VIOLA_poster.pdf">
+              <i class="fa fa-desktop">
+              </i>
+              poster
+             </a>
+             
+                 
+                 
+             <a href="https://spectrum.ieee.org/video-friday-sewer-spiders">
+              <i class="fa fa-podcast">
+              </i>
+              media
+             </a>
+             
+             <p>
+             </p>
+             
+
+            </td>
+           </tr>
+           
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+          </table>
+         </td>
+        </tr>
+       </table>
+       
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tr>
+         <td style="padding:2.5%;width:100%;vertical-align:middle">
+          <!-- <h3 id="skill-discovery">
+           Skill Discovery from Demonstrations
+          </h3> -->
+          <p>
+          </p>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+           
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+                
+           <tr class="pub-entry">
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+             <img alt="" src="/images/wan-icra-lotus.png" style="width:auto; height:auto; max-width:100%;">
+             </img>
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+             <h4>
+              <strong>
+               LOTUS: Continual Imitation Learning for Robot Manipulation Through Unsupervised Skill Discovery
+              </strong>
+             </h4>
+             <br/>
+             <a href="https://wkwan7.github.io/">Weikang Wan</a>, <strong>Yifeng Zhu*</strong>, <a href="https://shahrutav.github.io/">Rutav Shah*</a>, <a href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>
+                             
+                 
+             <br/>
+             <em>
+              International Conference on Robotics and Automation (ICRA)
+             </em>
+             ,  2024
+                 
+             <br/>
+             
+             <a href="https://ut-austin-rpl.github.io/Lotus/">
+              <i aria-hidden="true" class="fa fa-users">
+              </i>
+              project
+             </a>
+             	      
+                 
+             <a href="http://arxiv.org/abs/2311.02058">
+              <i aria-hidden="true" class="fa fa-book">
+              </i>
+              paper
+             </a>
+             
+                 
+                 
+             <a href="https://youtu.be/tZKwTE2poC8?si=a9ZcQP2yE_ZlIng8&t=1042">
+              <i aria-hidden="true" class="fa fa-video-camera">
+              </i>
+              video
+             </a>
+             
+                 
+                 
+             <a href="/bibtex/lotus.txt">
+              <i aria-hidden="true" class="fa fa-file">
+              </i>
+              bibtex
+             </a>
+             
+                 
+                 
+                 
+             <p>
+             </p>
+             
+
+            </td>
+           </tr>
+           
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+                
+           <tr class="pub-entry">
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+             <img alt="" src="/images/zhu-arxiv-buds.png" style="width:auto; height:auto; max-width:100%;">
+             </img>
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+             <h4>
+              <strong>
+               Bottom-Up Skill Discovery from Unsegmented Demonstrations for Long-Horizon Robot Manipulation
+              </strong>
+             </h4>
+             <br/>
+             <strong>Yifeng Zhu</strong>, <a href="https://www.cs.utexas.edu/~pstone">Peter Stone</a>, <a href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>
+                             
+                 
+             <br/>
+             <em>
+              IEEE Robotics and Automation Letters (RA-L)
+             </em>
+             ,  2022
+                 
+             <br/>
+             
+             <a href="https://ut-austin-rpl.github.io/BUDS-website/">
+              <i aria-hidden="true" class="fa fa-users">
+              </i>
+              project
+             </a>
+             	      
+                 
+             <a href="https://arxiv.org/abs/2109.13841">
+              <i aria-hidden="true" class="fa fa-book">
+              </i>
+              paper
+             </a>
+             
+                 
+                 
+             <a href="https://youtu.be/gXxQJBTmGmg">
+              <i aria-hidden="true" class="fa fa-video-camera">
+              </i>
+              video
+             </a>
+             
+                 
+             <a href="https://github.com/UT-Austin-RPL/BUDS">
+              <i aria-hidden="true" class="fa fa-code">
+              </i>
+              code
+             </a>
+             
+                 
+             <a href="/bibtex/buds.txt">
+              <i aria-hidden="true" class="fa fa-file">
+              </i>
+              bibtex
+             </a>
+             
+                 
+                 
+                 
+             <p>
+             </p>
+             
+
+            </td>
+           </tr>
+           
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+          </table>
+         </td>
+        </tr>
+       </table>
+       
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tr>
+         <td style="padding:2.5%;width:100%;vertical-align:middle">
+          <!-- <h3 id="open-source-manipulation">
+           Open-Sourced Efforts for Robot Learning
+          </h3> -->
+          <p>
+          </p>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+           
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+                
+           <tr class="pub-entry">
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+             <img alt="" src="/images/deoxys_logo.svg" style="width:auto; height:auto; max-width:100%;">
+             </img>
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+             <h4>
+              <strong>
+               Deoxys: A Modular, Real-Time Controller Library for Robot Learning
+              </strong>
+             </h4>
+             <br/>
+             <strong>Yifeng Zhu</strong>
+                 
+             <br/>
+             A user-friendly interface in Python and real-time controller implementation in C++
+                             
+                 
+             <br/>
+             
+             <a href="https://zhuyifengzju.github.io/deoxys_docs/html/getting_started/overview.html">
+              <i aria-hidden="true" class="fa fa-users">
+              </i>
+              project
+             </a>
+             	      
+                 
+                 
+                 
+             <a href="https://www.youtube.com/embed/UYdkRnGr8eM?si=Y67J7aNKa44C-eRn&amp;start=4335">
+              <i aria-hidden="true" class="fa fa-video-camera">
+              </i>
+              video
+             </a>
+             
+                 
+             <a href="https://github.com/UT-Austin-RPL/deoxys_control">
+              <i aria-hidden="true" class="fa fa-code">
+              </i>
+              code
+             </a>
+             
+                 
+             <a href="/bibtex/deoxys.txt">
+              <i aria-hidden="true" class="fa fa-file">
+              </i>
+              bibtex
+             </a>
+             
+                 
+                 
+                 
+             <p>
+             </p>
+             
+
+            </td>
+           </tr>
+           
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+                
+           <tr class="pub-entry">
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+             <img alt="" src="/images/robosuite.jpeg" style="width:auto; height:auto; max-width:100%;">
+             </img>
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+             <h4>
+              <strong>
+               robosuite: A Modular Simulation Framework and Benchmark for Robot Learning
+              </strong>
+             </h4>
+             <br/>
+             <a href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>, <a href="https://www.jowo.me/about">Josiah Wong</a>, <a href="https://ai.stanford.edu/~amandlek/">Ajay Mandlekar</a>, <a href="https://robertomartinmartin.com/">Roberto Martín-Martín</a>, Abhishek Joshi, <a href="https://snasiriany.me/">Soroush Nasiriany</a>, <strong>Yifeng Zhu</strong>
+                             
+                 
+             <br/>
+             <em>
+              Technical Report
+             </em>
+             ,  2022
+                 
+             <br/>
+             
+             <a href="https://robosuite.ai/">
+              <i aria-hidden="true" class="fa fa-users">
+              </i>
+              project
+             </a>
+             	      
+                 
+             <a href="https://arxiv.org/abs/2009.12293">
+              <i aria-hidden="true" class="fa fa-book">
+              </i>
+              paper
+             </a>
+             
+                 
+                 
+                 
+             <a href="https://github.com/ARISE-Initiative/robosuite">
+              <i aria-hidden="true" class="fa fa-code">
+              </i>
+              code
+             </a>
+             
+                 
+             <a href="/bibtex/robosuite.txt">
+              <i aria-hidden="true" class="fa fa-file">
+              </i>
+              bibtex
+             </a>
+             
+                 
+                 
+                 
+             <p>
+             </p>
+             
+
+            </td>
+           </tr>
+           
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+          </table>
+         </td>
+        </tr>
+       </table>
+       
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tr>
+         <td style="padding:2.5%;width:100%;vertical-align:middle">
+          <!-- <h3 id="moma">
+           Buildingwide Mobile Manipulation
+          </h3> -->
+          <p>
+          </p>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+           
+             
+             
+                
+           <tr class="pub-entry">
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+             <img alt="" src="/images/shah-arxiv-bumble.svg" style="width:auto; height:auto; max-width:100%;">
+             </img>
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+             <h4>
+              <strong>
+               BUMBLE: Unifying Reasoning and Acting with VLMs for Building-Wide Mobile Manipulation
+              </strong>
+             </h4>
+             <br/>
+             <a href="https://shahrutav.github.io/">Rutav Shah</a>, <a href="https://scholar.google.com/citations?user=ZzURcb4AAAAJ&hl=en">Albert Yu</a>, <strong>Yifeng Zhu</strong>, <a href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>,  <a href="https://robertomartinmartin.com/">Roberto Martín-Martín</a>
+                             
+                 
+             <br/>
+             <em>
+              Technical Reports
+             </em>
+             ,  2024
+                 
+             <br/>
+             
+             <a href="https://robin-lab.cs.utexas.edu/BUMBLE/">
+              <i aria-hidden="true" class="fa fa-users">
+              </i>
+              project
+             </a>
+             	      
+                 
+             <a href="https://arxiv.org/abs/2410.06237">
+              <i aria-hidden="true" class="fa fa-book">
+              </i>
+              paper
+             </a>
+             
+                 
+                 
+                 
+             <a href="https://github.com/UT-Austin-RobIn/BUMBLE">
+              <i aria-hidden="true" class="fa fa-code">
+              </i>
+              code
+             </a>
+             
+                 
+                 
+                 
+                 
+             <p>
+             </p>
+             
+
+            </td>
+           </tr>
+           
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+                
+           <tr class="pub-entry">
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+             <img alt="" src="/images/zhang-iros-s3o.png" style="width:auto; height:auto; max-width:100%;">
+             </img>
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+             <h4>
+              <strong>
+               Symbolic State Space Optimization for Long Horizon Mobile Manipulation Planning
+              </strong>
+             </h4>
+             <br/>
+             <a href="https://www.cs.binghamton.edu/~xzhan244/">Xiaohan Zhang</a>, <strong>Yifeng Zhu</strong>, <a href="https://yding25.com/">Yan Ding</a>, <a href="https://yuqianjiang.us/">Yuqian Jiang</a>, <a href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>, <a href="https://www.cs.utexas.edu/~pstone">Peter Stone</a>, <a href="http://www.cs.binghamton.edu/~szhang/">Shiqi Zhang</a>
+                             
+                 
+             <br/>
+             <em>
+              International Conference on Intelligent Robots and Systems (IROS)
+             </em>
+             ,  2023
+                 
+             <br/>
+             
+             <a href="https://sites.google.com/view/s3o">
+              <i aria-hidden="true" class="fa fa-users">
+              </i>
+              project
+             </a>
+             	      
+                 
+             <a href="https://arxiv.org/abs/2307.11889">
+              <i aria-hidden="true" class="fa fa-book">
+              </i>
+              paper
+             </a>
+             
+                 
+                 
+                 
+                 
+                 
+             <a href="https://drive.google.com/file/d/1bK-4SAehS9Mcr05o5mAA4pGuKnhkUvoN/view">
+              <i class="fa fa-desktop">
+              </i>
+              poster
+             </a>
+             
+                 
+                 
+             <p>
+             </p>
+             
+
+            </td>
+           </tr>
+           
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+                
+           <tr class="pub-entry">
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+             <img alt="" src="/images/zhang-icra22-visually.png" style="width:auto; height:auto; max-width:100%;">
+             </img>
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+             <h4>
+              <strong>
+               Visually Grounded Task and Motion Planning for Mobile Manipulation
+              </strong>
+             </h4>
+             <br/>
+             <a href="https://www.cs.binghamton.edu/~xzhan244/">Xiaohan Zhang</a>, <strong>Yifeng Zhu</strong>, <a href="https://yding25.com/">Yan Ding</a>, <a href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>, <a href="https://www.cs.utexas.edu/~pstone">Peter Stone</a>, <a href="http://www.cs.binghamton.edu/~szhang/">Shiqi Zhang</a>
+                             
+                 
+             <br/>
+             <em>
+              International Conference on Robotics and Automation (ICRA)
+             </em>
+             ,  2022
+                 
+             <br/>
+             
+             <a href="https://sites.google.com/view/grop-tamp">
+              <i aria-hidden="true" class="fa fa-users">
+              </i>
+              project
+             </a>
+             	      
+                 
+             <a href="https://arxiv.org/abs/2202.10667">
+              <i aria-hidden="true" class="fa fa-book">
+              </i>
+              paper
+             </a>
+             
+                 
+                 
+                 
+             <a href="https://github.com/keke-220/segbot-ur5">
+              <i aria-hidden="true" class="fa fa-code">
+              </i>
+              code
+             </a>
+             
+                 
+                 
+                 
+                 
+             <p>
+             </p>
+             
+
+            </td>
+           </tr>
+           
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+          </table>
+         </td>
+        </tr>
+       </table>
+       
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tr>
+         <td style="padding:2.5%;width:100%;vertical-align:middle">
+          <!-- <h3 id="learning-manipulation">
+           Learning for Robot Manipulation
+          </h3> -->
+          <p>
+          </p>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+           
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+                
+           <tr class="pub-entry">
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+             <img alt="" src="/images/bo-libero.png" style="width:auto; height:auto; max-width:100%;">
+             </img>
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+             <h4>
+              <strong>
+               LIBERO: Benchmarking Knowledge Transfer in Lifelong Robot Learning
+              </strong>
+             </h4>
+             <br/>
+             <a href="https://cranial-xix.github.io/">Bo Liu*</a>, <strong>Yifeng Zhu*</strong>, <a href="https://chongkaigao.com/">Chongkai Gao*</a>, <a href="https://www.cs.utexas.edu/~yihao/">Yihao Feng</a>, <a href="https://www.cs.utexas.edu/~lqiang/">Qiang Liu</a>, <a href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>, <a href="https://www.cs.utexas.edu/~pstone">Peter Stone</a>
+                             
+                 
+             <br/>
+             <em>
+              NeurIPS 2023 Datasets and Benchmarks Track
+             </em>
+             ,  2023
+                 
+             <br/>
+             
+             <a href="https://lifelong-robot-learning.github.io/LIBERO/html/getting_started/overview.html">
+              <i aria-hidden="true" class="fa fa-users">
+              </i>
+              project
+             </a>
+             	      
+                 
+             <a href="https://arxiv.org/pdf/2306.03310.pdf">
+              <i aria-hidden="true" class="fa fa-book">
+              </i>
+              paper
+             </a>
+             
+                 
+                 
+                 
+             <a href="https://github.com/Lifelong-Robot-Learning/LIBERO">
+              <i aria-hidden="true" class="fa fa-code">
+              </i>
+              code
+             </a>
+             
+                 
+             <a href="/bibtex/libero.txt">
+              <i aria-hidden="true" class="fa fa-file">
+              </i>
+              bibtex
+             </a>
+             
+                 
+                 
+                 
+             <p>
+             </p>
+             
+
+            </td>
+           </tr>
+           
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+                
+           <tr class="pub-entry">
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+             <img alt="" src="/images/jiang-arxiv21-giga.png" style="width:auto; height:auto; max-width:100%;">
+             </img>
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+             <h4>
+              <strong>
+               Synergies Between Affordance and Geometry: 6-DoF Grasp Detection via Implicit Representations
+              </strong>
+             </h4>
+             <br/>
+             <a href="https://zhenyujiang.me/"> Zhenyu Jiang</a>, <strong>Yifeng Zhu</strong>, Maxwell Svetlik, <a href="https://ai.stanford.edu/~kuanfang/"> Kuan Fang</a>, <a href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>
+                             
+                 
+             <br/>
+             <em>
+              Robotics: Science and Systems (RSS)
+             </em>
+             ,  2021
+                 
+             <br/>
+             
+             <a href="https://sites.google.com/view/rpl-giga2021">
+              <i aria-hidden="true" class="fa fa-users">
+              </i>
+              project
+             </a>
+             	      
+                 
+             <a href="http://arxiv.org/abs/2104.01542">
+              <i aria-hidden="true" class="fa fa-book">
+              </i>
+              paper
+             </a>
+             
+                 
+                 
+             <a href="https://youtu.be/Zb_TMsPv9uI">
+              <i aria-hidden="true" class="fa fa-video-camera">
+              </i>
+              video
+             </a>
+             
+                 
+             <a href="https://github.com/UT-Austin-RPL/GIGA">
+              <i aria-hidden="true" class="fa fa-code">
+              </i>
+              code
+             </a>
+             
+                 
+                 
+                 
+                 
+             <p>
+             </p>
+             
+
+            </td>
+           </tr>
+           
+             
+             
+             
+             
+             
+                
+           <tr class="pub-entry">
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+             <img alt="" src="/images/scene-graphs.png" style="width:auto; height:auto; max-width:100%;">
+             </img>
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+             <h4>
+              <strong>
+               Hierarchical Planning for Long-Horizon Manipulation with Geometric and Symbolic Scene Graphs
+              </strong>
+             </h4>
+             <br/>
+             <strong>Yifeng Zhu</strong>, <a href="https://scholar.google.ca/citations?user=zeS5UJEAAAAJ&hl=en">Jonathan Tremblay</a>, <a href="https://research.nvidia.com/person/stan-birchfield">Stan Birchfield</a>, <a href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>
+                             
+                 
+             <br/>
+             <em>
+              International Conference on Robotics and Automation (ICRA)
+             </em>
+             ,  2021
+                 
+             <br/>
+             
+             <a href="/projects/hierarchical-scene-graph/">
+              <i aria-hidden="true" class="fa fa-users">
+              </i>
+              project
+             </a>
+             	      
+                 
+             <a href="http://arxiv.org/abs/2012.07277">
+              <i aria-hidden="true" class="fa fa-book">
+              </i>
+              paper
+             </a>
+             
+                 
+                 
+             <a href="https://www.youtube.com/embed/GCfs3DJ4aO4">
+              <i aria-hidden="true" class="fa fa-video-camera">
+              </i>
+              video
+             </a>
+             
+                 
+                 
+             <a href="/bibtex/hsg.txt">
+              <i aria-hidden="true" class="fa fa-file">
+              </i>
+              bibtex
+             </a>
+             
+                 
+                 
+                 
+             <p>
+             </p>
+             
+
+            </td>
+           </tr>
+           
+             
+             
+             
+             
+             
+                
+           <tr class="pub-entry">
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+             <img alt="" src="/images/fast_uq.png" style="width:auto; height:auto; max-width:100%;">
+             </img>
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+             <h4>
+              <strong>
+               Fast Uncertainty Quantification for Deep Object Pose Estimation
+              </strong>
+             </h4>
+             <br/>
+             <a href="http://www.gshi.me/">Guanya Shi</a>, <strong>Yifeng Zhu</strong>, <a href="https://scholar.google.ca/citations?user=zeS5UJEAAAAJ&hl=en">Jonathan Tremblay</a>, <a href="https://research.nvidia.com/person/stan-birchfield">Stan Birchfield</a>, <a href="https://fabioramos.github.io/Home.html">Fabio Ramos</a>, <a href="http://tensorlab.cms.caltech.edu/users/anima/">Animashree Anandkumar</a>, <a href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>
+                             
+                 
+             <br/>
+             <em>
+              International Conference on Robotics and Automation (ICRA)
+             </em>
+             ,  2021
+                 
+             <br/>
+             
+             <a href="https://sites.google.com/view/fastuq">
+              <i aria-hidden="true" class="fa fa-users">
+              </i>
+              project
+             </a>
+             	      
+                 
+             <a href="https://arxiv.org/abs/2011.07748">
+              <i aria-hidden="true" class="fa fa-book">
+              </i>
+              paper
+             </a>
+             
+                 
+                 
+             <a href="https://youtu.be/7g91v6yAYwA">
+              <i aria-hidden="true" class="fa fa-video-camera">
+              </i>
+              video
+             </a>
+             
+                 
+                 
+                 
+                 
+                 
+             <p>
+             </p>
+             
+
+            </td>
+           </tr>
+           
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+          </table>
+         </td>
+        </tr>
+       </table>
+       
+
+    <!-- Update Recent News -->
+    <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+     <tr>
+      <td style="padding:2.5%;width:100%;vertical-align:middle">
+       <h2>
+        News
+       </h2>
+       <hr/>
+       <ul>
+        
+       </ul>
+      </td>
+     </tr>
+    </table> -->
+    <!-- Talks -->
+    <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+     <tr>
+      <td style="padding:2.5%;width:100%;vertical-align:middle">
+       <h2>
+        Talks
+       </h2>
+       <hr/>
+       <ul>
+        <li>
+         Dec 2023:
+         <i>
+          Deoxys: A Modular Robot Controller Library That Makes Learning and Research Easy.
+         </i>
+         CDC'23
+         <a href="https://www.youtube.com/watch?v=UYdkRnGr8eM">
+          Open-Source Code in Controls
+         </a>
+         Workshop.
+        </li>
+        <li>
+         Jul 2023:
+         <i>
+          Building Human-Like Learning Household Robots via Perceptual and Motor Abstractions.
+         </i>
+         RSS'23 Pioneers Workshop.
+        </li>
+        <li>
+         Nov 2023:
+         <i>
+          LIBERO: Benchmarking Knowledge Transfer in Robot Learning.
+         </i>
+         CoRL'23 Workshops
+         <a href="https://generalist-robots.github.io/schedule/">
+          TGR
+         </a>
+         and
+         <a href="https://sites.google.com/stanford.edu/corl2023ood">
+          OOD
+         </a>
+         .
+        </li>
+        <li>
+         Nov 2023:
+         <i>
+          LOTUS: Continual Imitation Learning for Robot Manipulation Through Unsupervised Skill Discovery.
+         </i>
+         CoRL'23 Workshop.
+        </li>
+        <li>
+         Oct 2021:
+         <i>
+          Building State and Action Representations For Long-Horizon Robot Manipulation
+         </i>
+         . Invited talk at Stanford.
+        </li>
+        <li>
+         Oct 2021:
+         <i>
+          Robot Manipulation with Geometric and Symbolic Scene
+        Graphs.
+         </i>
+         ICCV'21 workshop on Structural and Compositional
+          Learning on 3D Data. (
+         <a href="https://youtu.be/IIYumMRDrdg?t=11549">
+          video
+         </a>
+         )
+        </li>
+       </ul>
+      </td>
+     </tr>
+    </table> -->
+    <br/>
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+     <tr>
+      <td style="padding:2.5%;width:100%;vertical-align:middle">
+       <h2>
+        Teaching
+       </h2>
+       <hr/>
+       <ul>
+        <li>
+          Fall 2022, Teaching Assistant,
+           CS391R 
+          , UT Austin
+         </li>
+         <li>
+          Spring 2021, Teaching Assistant,
+           CS343
+          , UT Austin
+         </li>
+         <li>
+          Fall 2020, Teaching Assistant,
+           CS391R 
+          , UT Austin
+         </li>
+         <li>
+          Fall 2019, Teaching Assistant,
+           CS394R
+          , UT Austin
+         </li>
+        <!-- <li>
+         Fall 2022, Teaching Assistant,
+         <a href="https://www.cs.utexas.edu/~robertom/cs391r_fall2022/" style="text-decoration: underline">
+          CS391R Robot Learning
+         </a>
+         , UT Austin
+        </li>
+        <li>
+         Spring 2021, Teaching Assistant,
+         <a href="http://rpl.cs.utexas.edu/cs343_spring2021/" style="text-decoration: underline">
+          CS343 Artificial Intelligence
+         </a>
+         , UT Austin
+        </li>
+        <li>
+         Fall 2020, Teaching Assistant,
+         <a href="https://www.cs.utexas.edu/~yukez/cs391r_fall2020/" style="text-decoration: underline">
+          CS391R Robot Learning
+         </a>
+         , UT Austin
+        </li>
+        <li>
+         Fall 2019, Teaching Assistant,
+         <a href="https://www.cs.utexas.edu/~pstone/Courses/394Rfall19/" style="text-decoration: underline">
+          CS394R Reinforcement Learning
+         </a>
+         , UT Austin
+        </li> -->
+       </ul>
+      </td>
+     </tr>
+    </table>
+    <br/>
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+     <tr>
+      <td style="padding:2.5%;width:100%;vertical-align:middle">
+       <h2>
+        Skills and Interests
+       </h2>
+       <hr/>
+       <p>
+       </p>
+       <p>
+        Language
+       </p>
+       <ul>
+        <li>
+         Chinese native
+        </li>
+        <li>
+         English professional
+        </li>
+        <li>
+         Japanese intermediate
+        </li>
+       </ul>
+       <p>
+        Sports
+       </p>
+       <ul>
+        <li>
+         Soccer
+        </li>
+        <li>
+         Tae Kwon Do
+        </li>
+        <li>
+         Chinese Martial Arts
+        </li>
+       </ul>
+      </td>
+     </tr>
+    </table>
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <tr>
+       <td style="padding:2.5%;width:100%;vertical-align:middle">
+        <h2>
+         Contact
+        </h2>
+        <p>
+         Computer Science Department, The University of Texas at Austin
+        </p>
+        <p>
+         Email: yifeng.zhu [at] utexas.edu
+        </p>
+       </td>
+      </tr>
+     </table>
+     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+       <tr>
+        <td style="padding:0px">
+         <br/>
+         <p style="text-align:center;font-size:small;">
+          Design and source code from
+          <a href="https://jonbarron.info" style="font-size:small;">
+           Jon Barron's website
+          </a>
+         </p>
+        </td>
+       </tr>
+      </table>
+     </table>
+    </table>
+   </td>
+  </tr>
+ </table>
+</div>
+  </body>
+
+</html>
