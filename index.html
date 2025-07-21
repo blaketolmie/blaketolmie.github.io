@@ -1,33 +1,1260 @@
+
 <!DOCTYPE HTML>
 <html lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
   <title>Blake Tolmie</title>
-  <a href="https://txsun1997.github.io/blogs/moss.html">moss</a>
-  <a href="https://blaketolmie.github.io/blogs/moss.html">moss blake</a>
-  <a href="https://blaketolmie.github.io/index1.html">blake</a>
 
-  <meta name="author" content="Blake Tolmie">
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+  <meta name="author" content="Blake Tolmie" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet"  type="text/css" href="/mdb.min.css" > -->
+  <link rel="stylesheet" type="text/css" href="/style.css" />
+  <link rel="icon" type="image/png" href="images/tab_icon.png">
+  <link rel="canonical" href="https://blaketolmie.github.io/">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300; -->
+<!-- 	    700&display=swap" rel="stylesheet" type="text/css"> -->
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+</head>
 
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" type="image/png" href="images/Blake/tab_icon_9.png">
-<!-- styling remove 'Lato' if wanting the Ngapuhi a to look normal -->
-  <style>
-    body,
-    table,
-    td,
-    p,
-    ul,
-    li,
-    heading {
-      font-family: 'Lato', 'Segoe UI', Arial, Helvetica, sans-serif;
+
+
+
+
+<script async
+src="https://www.googletagmanager.com/gtag/js?id=UA-116538728-1"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-116538728-1');
+  </script>
+	
+  <script>
+    document.querySelector('.dropbtn').addEventListener('click', function() {
+        document.querySelector('.dropdown-content').classList.toggle('show');
+    });
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
     }
-  </style>
+</script>
 
-  <script type="text/javascript">
+
+
+<style>
+
+
+.floating-menu {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #7baadc;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+.dropbtn {
+    background-color: #7baadc;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #090808;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1001;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd!important;}
+</style>
+
+  <body>
+    <div>
+ <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tr style="padding:0px">
+   <td style="padding:0px">
+    <style>
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: white;
+  color: gray;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: white;
+  color: black;
+}
+
+.topnav {
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+
+<!-- Top bar home and projects buttons -->
+<!-- <div class="topnav">
+<nav>
+  
+    <a href="https://cs.utexas.edu/~yifengz/dissertation.html" >
+      Projects
+    </a>
+    
+    <a href="/" class="active">
+      Home
+    </a>
+    
+</nav>
+</div> -->
+
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+     <tr style="padding:0px">
+      <td style="padding:2.5%;width:65%;vertical-align:middle">
+       <h1>
+        Blake Tolmie
+       </h1>
+       <p>
+        I’m a third-year Mechatronics Engineering student at the <a href="https://www.canterbury.ac.nz/" target="_blank">University of Canterbury</a>. Over summer, I completed a research internship at the <a href="https://www.auckland.ac.nz/en/abi.html">Auckland Bioengineering Institute</a>, where I designed a soft valve for MHD soft robotics using electropermanent magnets, advised by <a href="https://profiles.auckland.ac.nz/b-ruddy">Bryan Ruddy</a>. Outside of my studies, I work as a campus tour guide, play the banjo, and run marathons. For a full list of my projects, see the Projects section.
+
+
+       </p>
+       <p style="text-align:center">
+
+        <a href="mailto:blaketolmie8@gmail.com" target="_blank">
+         Email
+        </a> &nbsp;/&nbsp;
+
+        <a href="data/CV Blake Tolmie.pdf" target="_blank">CV</a> &nbsp;/&nbsp;  
+        
+        <a href="https://www.linkedin.com/in/blake-tolmie-b66a96318">LinkedIn</a>
+       </p>
+      </td>
+      <td style="padding:2.5%;width:35%;max-width:40%;margin-bottom:-30px">
+       <!-- <img style="width:100%;max-width:100%" alt="profile photo" src="images/profile.jpeg"> -->
+       <a href="images/Profile.jpg"><img alt="profile photo" src="images/Profile.jpg" style="width:100%;max-width:100%;border-radius: 5px;" class="hoverZoomLink"/></a>
+      </td>
+     </tr>
+    </table>
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+     <tr>
+      <td style="padding:2.5%;width:100%;vertical-align:middle">
+       <h2>
+        About Me
+       </h2>
+       <hr/>
+       <p>
+        Before starting my degree, I explored a variety of industries, including floor sanding, roofing, boat building, beekeeping, and forklift driving. These hands-on experiences gave me a broader perspective on how people live, work, and solve problems. 
+        
+        My travel experiences across the world to the countries like U.S., Mexico, China, and Australia has further sharpened my ability to collaborate with people from all walks of life, think on my feet and approach challenges creatively. What drives me isn't just the challenge of making things work, but the responsibility of making things that matter. I want to design tools and technologies that empower others - "things that make things" - while also being mindful of the people and environments they affect. 
+        <br><br>
+        I’m currently studying Mechatronics Engineering at University of Canterbury, where I’ve learned to design, build, and integrate systems across mechanics, electronics, and embedded software through various projects. These projects include writing real-time C firmware for STM32 microcontrollers, designing and simulating PCBs, integrating sensors and displays via I²C and SPI, and implementing control algorithms for dynamic systems. I’ve also developed CAD models in SolidWorks and Fusion 360, worked with 3D printing and CAM workflows, and gained hands-on skills in debugging, version control (Git), and system-level design. These experiences have given me practical skills in system-level thinking, debugging with oscilloscopes and logic analyzers, version control with Git, and cross-disciplinary collaboration in complex mechatronic projects.
+        </p>
+      </td>
+     </tr>
+    </table>
+
+
+
+    <!-- Template -->
+    <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <tr>
+       <td style="padding:2.5%;width:100%;vertical-align:middle">
+        <h2>
+         Exchange/Visiting Experiences
+        </h2>
+        <hr/>
+        <ul>
+         <li>
+          2017 - 2018, Carnegie Mellon University
+         </li>
+         <li>
+          2017, UCLA
+         </li>
+        </ul>
+       </td>
+      </tr>
+     </table> -->
+
+
+
+    <!-- Highlight Research -->
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tr>
+         <td style="padding:2.5%;width:100%;vertical-align:middle">
+          <h2>
+           Research (Selected Projects)
+           <hr>
+           
+
+
+<div class="col-sm-8 col-md-4 col-lg-3">
+<div class="carousel__holder">
+    <div id="carousel-1" class="carousel">
+
+        
+          <input class="carousel__activator" type="radio" name="carousel-1" id="-1a" checked="checked" />
+        
+          <input class="carousel__activator" type="radio" name="carousel-1" id="-1b"  />
+        
+          <input class="carousel__activator" type="radio" name="carousel-1" id="-1c"  />
+        
+          <input class="carousel__activator" type="radio" name="carousel-1" id="-1d"  />
+        
+          <input class="carousel__activator" type="radio" name="carousel-1" id="-1e"  />
+        
+        
+          
+          
+          
+          
+          <div class="carousel__controls">
+              <label class="carousel__control carousel__control--backward" for="-1e"></label>
+              <label class="carousel__control carousel__control--forward" for="-1b"></label>
+          </div>
+        
+          
+          
+          
+          
+          <div class="carousel__controls">
+              <label class="carousel__control carousel__control--backward" for="-1a"></label>
+              <label class="carousel__control carousel__control--forward" for="-1c"></label>
+          </div>
+        
+          
+          
+          
+          
+          <div class="carousel__controls">
+              <label class="carousel__control carousel__control--backward" for="-1b"></label>
+              <label class="carousel__control carousel__control--forward" for="-1d"></label>
+          </div>
+        
+          
+          
+          
+          
+          <div class="carousel__controls">
+              <label class="carousel__control carousel__control--backward" for="-1c"></label>
+              <label class="carousel__control carousel__control--forward" for="-1e"></label>
+          </div>
+        
+          
+          
+          
+          
+          <div class="carousel__controls">
+              <label class="carousel__control carousel__control--backward" for="-1d"></label>
+              <label class="carousel__control carousel__control--forward" for="-1a"></label>
+          </div>
+        
+        <div class="carousel__track">
+          <ul>
+
+
+            
+            <div class="carousel__slide">
+              <h3 style="text-align: center;">Auckland Bioengineering Research Poster</h3>
+                <div id="pdfViewer" style="width: 100%; height: 100%; overflow: auto;"></div>
+            </div>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+            <script>
+              const url = '/data/Blake_Tolmie_ABI_Poster.pdf'; // Path to your PDF file
+              const container = document.getElementById('pdfViewer');
+
+              const loadingTask = pdfjsLib.getDocument(url);
+              loadingTask.promise.then(pdf => {
+                for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+                  pdf.getPage(pageNum).then(page => {
+                    const viewport = page.getViewport({ scale: 1 }); /*0.305*/
+                    const canvas = document.createElement('canvas');
+                    const context = canvas.getContext('2d');
+                    canvas.height = viewport.height;
+                    canvas.width = viewport.width;
+
+                    container.appendChild(canvas);
+
+                    const renderTask = page.render({ canvasContext: context, viewport: viewport });
+                      // Apply CSS scaling to visually reduce size
+                      canvas.style.transform = 'scale(0.3)'; // Scale down visually
+                      canvas.style.transformOrigin = 'top left'; // Ensure scaling starts from the top-left corner
+
+                   renderTask.promise.then(() => {
+                    // Wait 1 second before starting auto-scroll
+                      setTimeout(() => {
+                          const scrollInterval = setInterval(() => {
+                            const maxScroll = container.scrollHeight - container.clientHeight-870; // Maximum scroll position
+                            if (container.scrollTop >= maxScroll) {
+                              container.scrollTop = 0; 
+                            } else {
+                              container.scrollBy(0, 0.5); // Adjust scroll speed (scroll down by 0.5 pixels)
+                            }
+                        }, 100); // Scroll every 100 milliseconds
+                      }, 1000); // Wait 1 second before starting
+                    });
+                  });
+                }
+              });
+            </script>
+      
+
+            <div class="carousel__slide">
+              Line Following Robot
+              <div class="carousel_video">
+                <iframe 
+                  class="img-fluid" 
+                  width="100%" 
+                  height="100%" 
+                  src="https://www.youtube.com/embed/FtZBa48xyP8?autoplay=1&mute=1&loop=1&playlist=FtZBa48xyP8&controls=0&rel=0&showinfo=0"
+                   
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen
+                  style="pointer-events: none;">
+                </iframe>
+              </div>
+            </div>
+
+            <div class="carousel__slide">
+              UC Flight Club
+              <div class="carousel_video">
+                <iframe 
+                  class="img-fluid" 
+                  width="100%" 
+                  height="100%" 
+                  src="https://www.youtube.com/embed/ln7Vwi-D4S0?autoplay=1&mute=1&loop=1&playlist=ln7Vwi-D4S0&controls=0&rel=0&showinfo=0"
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen
+                  style="pointer-events: none;">
+                </iframe>
+              </div>
+
+            </div>
+            <div class="carousel__slide">
+              <h3 style="text-align: center;">Flying my drone in Marlborough Sounds</h3>
+              <div class="carousel_video">
+                <iframe 
+                  class="img-fluid" 
+                  width="100%" 
+                  height="100%" 
+                  src="https://www.youtube.com/embed/SsaPzd6Pu9Q?autoplay=1&mute=1&loop=1&playlist=SsaPzd6Pu9Q&controls=0&rel=0&showinfo=0"
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen
+                  style="pointer-events: none;">
+                </iframe>
+              </div>
+            </div>
+            
+            <div class="carousel__slide">
+              <h3 style="text-align: center;">Pick and Place Prototype</h3>
+              <div class="carousel_video">
+                <iframe 
+                  class="img-fluid" 
+                  width="100%" 
+                  height="100%" 
+                  src="https://www.youtube.com/embed/WZPeCcrsdzY?autoplay=1&mute=1&loop=1&playlist=WZPeCcrsdzY&controls=0&rel=0&showinfo=0"
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen
+                  style="pointer-events: none;">
+                </iframe>
+              </div>
+            </div>
+            
+            
+          </ul>
+        </div>
+        <div class="carousel__indicators">
+            
+              <label class="carousel__indicator" for="-1a"></label>
+            
+              <label class="carousel__indicator" for="-1b"></label>
+            
+              <label class="carousel__indicator" for="-1c"></label>
+            
+              <label class="carousel__indicator" for="-1d"></label>
+            
+              <label class="carousel__indicator" for="-1e"></label>
+            
+        </div>
+    </div>
+</div>
+</div>
+
+<style>
+
+.carousel__holder {width: 100%; position: relative; padding-bottom: 45%; margin: 1rem 0 1rem;}
+.carousel {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  position: absolute;
+  padding: 0;
+}
+.carousel__controls,
+.carousel__activator {
+  display: none;
+}
+
+.carousel__activator:nth-of-type(1):checked ~ .carousel__track {
+  -webkit-transform: translateX(-000%);
+          transform: translateX(-000%);
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__slide:nth-of-type(1) {
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__controls:nth-of-type(1) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) {
+  opacity: 1;
+}
+
+.carousel__activator:nth-of-type(2):checked ~ .carousel__track {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__slide:nth-of-type(2) {
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__controls:nth-of-type(2) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) {
+  opacity: 1;
+}
+
+.carousel__activator:nth-of-type(3):checked ~ .carousel__track {
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__slide:nth-of-type(3) {
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__controls:nth-of-type(3) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) {
+  opacity: 1;
+}
+
+.carousel__activator:nth-of-type(4):checked ~ .carousel__track {
+  -webkit-transform: translateX(-300%);
+          transform: translateX(-300%);
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__slide:nth-of-type(4) {
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__controls:nth-of-type(4) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) {
+  opacity: 1;
+}
+
+.carousel__activator:nth-of-type(5):checked ~ .carousel__track {
+  -webkit-transform: translateX(-400%);
+          transform: translateX(-400%);
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__slide:nth-of-type(5) {
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__controls:nth-of-type(5) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) {
+  opacity: 1;
+}
+
+
+.carousel__control {
+  height: 30px;
+  width: 30px;
+  margin-top: -15px;
+  top: 50%;
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  border-width: 5px 5px 0 0;
+  border-style: solid;
+  border-color: #d0d0d0; # #fafafa;
+  opacity: 0.35;
+  opacity: 1;
+  outline: 0;
+  z-index: 3;
+}
+.carousel__control:hover {
+  opacity: 1;
+}
+.carousel__control--backward {
+  left: 20px;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+.carousel__control--forward {
+  right: 20px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.carousel__indicators {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  text-align: center;
+}
+.carousel__indicator {
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  display: inline-block;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0.35;
+  margin: 0 2.5px 0 2.5px;
+  background-color: #303030 !important;
+}
+.carousel__indicator:hover {
+  opacity: 0.75;
+}
+.carousel__track {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  transition: -webkit-transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+}
+.carousel__track .carousel__slide {
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.carousel__track .carousel__slide:nth-of-type(1) {
+  -webkit-transform: translateX(000%);
+          transform: translateX(000%);
+}
+
+.carousel__track .carousel__slide:nth-of-type(2) {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.carousel__track .carousel__slide:nth-of-type(3) {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+}
+
+.carousel__track .carousel__slide:nth-of-type(4) {
+  -webkit-transform: translateX(300%);
+          transform: translateX(300%);
+}
+
+.carousel__track .carousel__slide:nth-of-type(5) {
+  -webkit-transform: translateX(400%);
+          transform: translateX(400%);
+}
+
+
+.carousel--scale .carousel__slide {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.carousel__slide {
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+}
+/* .carousel_video{
+  border-radius:5%;
+  overflow:hidden;
+} */
+
+/* Added to ensure the video fits within the carousel slide */
+.carousel_video {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.carousel_video iframe {
+  width: 100%;
+  height: 200%;
+  object-fit: contain; /* Ensures the video fills the container */
+  border: none;
+}
+
+
+.carousel__slide .overlay {height: 100%;}
+.carousel--thumb .carousel__indicator {
+  height: 30px;
+  width: 30px;
+}
+.carousel__indicator {
+  background-color: #fafafa;
+}
+
+.carousel__slide:nth-of-type(1),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel__slide:nth-of-type(2),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(2) {
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel__slide:nth-of-type(3),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3) {
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel__slide:nth-of-type(4),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(4) {
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel__slide:nth-of-type(5),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(5) {
+  background-size: cover;
+  background-position: center;
+}
+
+</style>
+
+<script>
+  function isVisible(el) {
+        while (el) {
+            if (el === document) {
+                return true;
+            }
+
+            var $style = window.getComputedStyle(el, null);
+
+            if (!el) {
+                return false;
+            } else if (!$style) {
+                return false;
+            } else if ($style.display === 'none') {
+                return false;
+            } else if ($style.visibility === 'hidden') {
+                return false;
+            } else if (+$style.opacity === 0) {
+                return false;
+            } else if (($style.display === 'block' || $style.display === 'inline-block') &&
+                $style.height === '0px' && $style.overflow === 'hidden') {
+                return false;
+            } else {
+                return $style.position === 'fixed' || isVisible(el.parentNode);
+            }
+        }
+  }
+  
+  setInterval(function(){
+    var j=0;
+    var elements = document.querySelectorAll('#carousel-1 .carousel__control--forward');
+    for(i=(elements.length - 1);i>-1;i--) {
+      if(isVisible(elements[i])) j=i;
+    }
+    elements[j].click();
+  },30000);
+  
+</script>
+          </h2>
+          <hr/>
+         </td>
+        </tr>
+       </table>
+
+       
+       
+       
+       <!-- Get the current second and calculate the rotation offset -->
+       
+       
+       
+       <!-- Rotate the list -->
+       
+
+       
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tr>
+         <td style="padding:2.5%;width:100%;vertical-align:middle">
+          <p>
+          </p>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+           
+             
+             
+                    
+       <!-- editing from here - link to another page explaining the projects -->
+        <!-- Projects to list are: Embedded - Step Counter, LFR  Mechanical - Pick and Place, Bearing Assignment or Structural -->
+
+        <!-- Eventually want to add all my projects from my degree on here - can then add section of all projects where it has pages and pages of my projects that I have done at university -->
+             
+             
+<!--              
+                
+           <tr class="pub-entry">
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+             <img alt="" src="/images/zhu-corl-okami.png" style="width:auto; height:auto; max-width:100%;">
+             </img>
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+             <h4>
+              <strong>
+               Okami: Teaching humanoid robots manipulation skills through single video imitation
+              </strong>
+             </h4>
+             <br/>
+             <a href="https://lijinhan21.github.io/">Jinhan Li</a>, <strong>Yifeng Zhu*</strong>, <a href="">Yuqi Xie*</a>, <a href="https://zhenyujiang.me/">Zhenyu Jiang*</a>, <a href="https://mingyoseo.com/">Mingyo Seo</a>, <a href="https://geopavlakos.github.io/">Georgios Pavlakos</a>,  <a href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>
+                             
+                 
+             <br/>
+             <em>
+              Conference on Robot Learning (CoRL) (oral presentation)
+             </em>
+             ,  2024
+                 
+             <br/>
+             
+             <a href="https://ut-austin-rpl.github.io/OKAMI/">
+              <i aria-hidden="true" class="fa fa-users">
+              </i>
+              project
+             </a>
+             	      
+                 
+             <a href="https://arxiv.org/abs/2410.11792">
+              <i aria-hidden="true" class="fa fa-book">
+              </i>
+              paper
+             </a>
+             
+                 
+                 
+             <a href="https://youtu.be/P8WwXSnKq1g?si=zUkqYmtiIHuw_Ida">
+              <i aria-hidden="true" class="fa fa-video-camera">
+              </i>
+              video
+             </a>
+             
+                 
+                 
+             <a href="/bibtex/okami.txt">
+              <i aria-hidden="true" class="fa fa-file">
+              </i>
+              bibtex
+             </a>
+             
+                 
+                 
+                 
+             <p>
+             </p>
+             
+
+            </td>
+           </tr>
+           
+             
+             
+             
+             
+             
+             
+             
+             
+             
+                
+           <tr class="pub-entry">
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+             <img alt="" src="/images/zhu-arxiv-orion.png" style="width:auto; height:auto; max-width:100%;">
+             </img>
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+             <h4>
+              <strong>
+               ORION: Vision-based Manipulation from Single Human Video with Open-World Object Graphs
+              </strong>
+             </h4>
+             <br/>
+             <strong>Yifeng Zhu</strong>, <a href="https://www.linkedin.com/in/arisrei-lim/">Arisrei Lim</a>, <a href="https://www.cs.utexas.edu/~pstone">Peter Stone</a>, <a href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>
+                             
+                 
+             <br/>
+             <em>
+              Technical Reports
+             </em>
+             ,  2024
+                 
+             <br/>
+             
+             <a href="https://ut-austin-rpl.github.io/ORION-release/">
+              <i aria-hidden="true" class="fa fa-users">
+              </i>
+              project
+             </a>
+             	      
+                 
+             <a href="https://arxiv.org/abs/2405.20321">
+              <i aria-hidden="true" class="fa fa-book">
+              </i>
+              paper
+             </a>
+             
+                 
+                 
+             <a href="https://youtu.be/fuIoUwKf_jw?si=lo1iWXO-bo2yVen5">
+              <i aria-hidden="true" class="fa fa-video-camera">
+              </i>
+              video
+             </a>
+             
+                 
+                 
+             <a href="/bibtex/orion.txt">
+              <i aria-hidden="true" class="fa fa-file">
+              </i>
+              bibtex
+             </a>
+             
+                 
+                 
+                 
+             <p>
+             </p>
+             
+
+            </td>
+           </tr>
+           
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+         
+             
+          </table>
+         </td>
+        </tr>
+       </table>
+       
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tr>
+         <td style="padding:2.5%;width:100%;vertical-align:middle">
+          <p>
+          </p>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+           
+
+
+
+
+
+            
+                
+           <tr class="pub-entry">
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+             <img alt="" src="/images/zhu-corl-groot.png" style="width:auto; height:auto; max-width:100%;">
+             </img>
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+             <h4>
+              <strong>
+               GROOT: Learning Generalizable Manipulation Policies with Object-Centric 3D Representations
+              </strong>
+             </h4>
+             <br/>
+             <strong>Yifeng Zhu</strong>, <a href="https://zhenyujiang.me/"> Zhenyu Jiang</a>, <a href="https://www.cs.utexas.edu/~pstone">Peter Stone</a>, <a href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>
+                             
+                 
+             <br/>
+             <em>
+              Conference on Robot Learning (CoRL)
+             </em>
+             ,  2023
+                 
+             <br/>
+             
+             <a href="https://ut-austin-rpl.github.io/GROOT/">
+              <i aria-hidden="true" class="fa fa-users">
+              </i>
+              project
+             </a>
+             	      
+                 
+             <a href="http://arxiv.org/abs/2310.14386">
+              <i aria-hidden="true" class="fa fa-book">
+              </i>
+              paper
+             </a>
+             
+                 
+                 
+             <a href="https://www.youtube.com/watch?v=T_wW-Mzt49M">
+              <i aria-hidden="true" class="fa fa-video-camera">
+              </i>
+              video
+             </a>
+             
+                 
+             <a href="https://github.com/UT-Austin-RPL/GROOT">
+              <i aria-hidden="true" class="fa fa-code">
+              </i>
+              code
+             </a>
+             
+                 
+             <a href="/bibtex/groot.txt">
+              <i aria-hidden="true" class="fa fa-file">
+              </i>
+              bibtex
+             </a>
+             
+                 
+             <a href="/files/GROOT_poster.pdf">
+              <i class="fa fa-desktop">
+              </i>
+              poster
+             </a>
+             
+                 
+                 
+             <p>
+             </p>
+             
+
+            </td>
+           </tr>
+           
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+                
+           <tr class="pub-entry">
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+             <img alt="" src="/images/zhu-corl-viola.png" style="width:auto; height:auto; max-width:100%;">
+             </img>
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+             <h4>
+              <strong>
+               VIOLA: Imitation Learning for Vision-Based Manipulation with Object Proposal Priors
+              </strong>
+             </h4>
+             <br/>
+             <strong>Yifeng Zhu</strong>, Abhishek Joshi, <a href="https://www.cs.utexas.edu/~pstone">Peter Stone</a>, <a href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>
+                             
+                 
+             <br/>
+             <em>
+              Conference on Robot Learning (CoRL)
+             </em>
+             ,  2022
+                 
+             <br/>
+             
+             <a href="https://ut-austin-rpl.github.io/VIOLA/">
+              <i aria-hidden="true" class="fa fa-users">
+              </i>
+              project
+             </a>
+             	      
+                 
+             <a href="https://arxiv.org/abs/2210.11339">
+              <i aria-hidden="true" class="fa fa-book">
+              </i>
+              paper
+             </a>
+             
+                 
+                 
+                 
+             <a href="https://github.com/UT-Austin-RPL/VIOLA">
+              <i aria-hidden="true" class="fa fa-code">
+              </i>
+              code
+             </a>
+             
+                 
+             <a href="/bibtex/viola.txt">
+              <i aria-hidden="true" class="fa fa-file">
+              </i>
+              bibtex
+             </a>
+             
+                 
+             <a href="/files/VIOLA_poster.pdf">
+              <i class="fa fa-desktop">
+              </i>
+              poster
+             </a>
+             
+                 
+                 
+             <a href="https://spectrum.ieee.org/video-friday-sewer-spiders">
+              <i class="fa fa-podcast">
+              </i>
+              media
+             </a>
+             
+             <p>
+             </p>
+             
+
+            </td>
+           </tr>
+ 
+           
+             
+          </table>
+         </td>
+        </tr>
+       </table> -->
+
+       <!-- to here editing -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+     <script type="text/javascript">
     function display(id) {
       var traget = document.getElementById(id);
       if (traget.style.display == "none") {
@@ -37,275 +1264,142 @@
       }
     }
   </script>
-</head>
+    
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tbody>
+    <tr>
+      <td style="padding:20px;width:100%;vertical-align:middle">
+        <h2>Experience & Achievements Overview</h2>
+        <hr/>
+        <ul>
+          <li>[Mar. 2025]</b> Began roles as Mechatronics Mentor and UniBuddy Ambassador at the University of Canterbury.</li>
+          <li>[Feb. 2025]</b> Appointed Road Bike Representative for UC Bike Club, organizing weekly events and fostering inclusive participation.</li>
+          <li>[Feb. 2025]</b> Completed summer research internship at Auckland Bioengineering Institute, designing soft valves for MHD soft robotics using electropermanent magnets.</li>
+     
+          <li>[Oct. 2024]</b> Elected Secretary of UC Flight Club, managing communications and coordinating industry events.</li>
+          <li>[Jul. 2024]</b> Awarded Ngāpuhi Education Scholarship in recognition of academic excellence and iwi contribution potential.</li>
+          <!-- Show More Split -->
+          <a href="javascript:void(0);" onclick="display('more_news');" style="cursor:pointer;padding: 81px;"> show more &nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <div id="more_news" style="display:none;">
+            <li>[Jul. 2023]</b> Began role as Campus Tour Guide at the University of Canterbury.</li>     
+            <li>[Feb. 2023]</b> Completed role at Solution Dynamics for a second summer term in stores and forklift operations.</li>
+            <li>[Feb. 2023]</b> Began studies in Mechatronics Engineering at the University of Canterbury.</li>
+            <li>[Feb. 2023]</b> Completed role at <a href="https://solutiondynamics.com/" target="_blank" rel="noopener">Solution Dynamics</a> in logistics and forklift operations.</li>
+            <li>[Oct. 2022]</b> Completed role at Lancer Industries (<a href="https://www.sealegs.com/" target="_blank" rel="noopener">SEALEGS</a>) as a boat builder specializing in Hypalon tubes.</li>
+            <li>[Oct. 2022]</b> Concluded 7-year operation of The Bee Brothers & Co beekeeping business.</li>
+            <li>[Mar. 2022]</b> Completed role at <a href="https://naturalroofingproducts.co.nz/" target="_blank" rel="noopener">Natural Roofing Products</a></li>
+            <li>[Nov. 2021]</b> Completed role at <a href="https://www.facebook.com/AucklandFlooring/" target="_blank" rel="noopener">Auckland Flooring</a></li>
+          </div>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+  
 
-<body>
-  <table
-    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr style="padding:0px">
-                <td style="padding:2.5%;width:63%;vertical-align:middle">
-                  <p style="text-align:center">
-                    <name>Blake Tolmie</name>
-                  </p>
-                  I’m a Mechatronics Engineering student at the University of Canterbury with a hands-on background in industries like boat building, beekeeping, and logistics. My project work spans embedded systems, PCB and CAD design, and real-time C programming on STM32 microcontrollers. I’ve travelled widely—from China to Mexico—and bring a practical, people-focused mindset to engineering. I’m passionate about designing tools that empower others and solve real-world problems.
+  
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tbody>
+    <tr>
+      <td style="padding:2.5%;width:100%;vertical-align:middle">
+        <h2>Other Projects</h2>
+        <hr/>
+        <div style="font-weight:bold; margin-top:10px; margin-bottom:4px;">Embedded Systems & Control</div>
+        <ul>
+          <li><b>Step Counter (STM32):</b> Programmed a real-time step counting system using STM32 microcontroller and C in STM32CubeIDE. Integrated low-level sensor data processing and user feedback.</li>
+          <li><b>UC Fun Kit Multiplayer Game:</b> Developed an interactive multiplayer game of rock-paper-scissors using IR communication, buttons, and OLED display; coded in C.</li>
+          <li><b>Line Following Robot:</b> Designed and programmed a robot using custom PCB and microcontroller firmware in C. Placed 8th out of 38 teams with a time of 14.9 seconds.</li>
+          <li><b>Elevator Control System:</b> Programmed a PLC to simulate elevator logic using ladder logic with PID control and SCAN algorithm for scheduling.</li>
+        </ul>
+        <div style="font-weight:bold; margin-top:18px; margin-bottom:4px;">CAD, CAM & Mechatronic Design</div>
+        <ul>
+          <li><b>PCB Pick & Place Machine:</b> Designed custom SolidWorks parts and created G-code for CNC operation of a PCB pick-and-place machine.</li>
+          <li><b>CNC Coaster Project:</b> Created a coaster design in SolidWorks, generated 3-axis CNC toolpaths using HSMWorks for mill manufacturing.</li>
+          <li><b>Model Car (ENMT221 Project):</b> Designed and refined a 3D model of a functional car using SolidWorks.</li>
+        </ul>
+        <div style="font-weight:bold; margin-top:18px; margin-bottom:4px;">Rocketry & Aerospace Projects</div>
+        <ul>
+          <li><b>Flight Computer – UC Aerospace Club:</b> Designed, assembled, and programmed a custom PCB flight computer using KiCad and embedded C for telemetry and control.</li>
+          <li><b>Level 1 Rocket (UC Aerospace Club):</b> Collaborated in a multidisciplinary team to build and launch a fully functional rocket meeting Level 1 certification standards.</li>
+        </ul>
+        <div style="font-weight:bold; margin-top:18px; margin-bottom:4px;">Other Projects</div>
+        <ul>
+          <li><b>RoboCup (ENMT301):</b> Programmed and built an autonomous robot for a competitive robotics challenge, applying embedded systems, sensor fusion, and design optimization.</li>
+          <li><b>Automated Club Email System:</b> Developed an automated email distribution tool using Google Apps Script to streamline communication with all UC Flight club members.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-                  <p style="text-align:center">
-                    <a href="data/CV Blake Tolmie.pdf" target="_blank">CV</a> &nbsp;/&nbsp;
-                    <a href="https://www.linkedin.com/in/blake-tolmie-b66a96318">LinkedIn</a> &nbsp;/&nbsp;
-                    <a href="mailto:blaketolmie8@gmail.com">Email</a>
-                  </p>
-                </td>
-                <td style="padding:2.5%;width:40%;max-width:40%">
-                  <a href="images/Blake/Profile.jpg"><img style="width:80%;max-width:80" alt="profile photo"
-                      src="images/Blake/Profile.jpg" class="hoverZoomLink"></a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
 
-                 <!-- About Me Section -->
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>About Me</heading>
-                  <p>
-                    Before starting my degree, I explored a variety of industries, including floor sanding, roofing, boat building, beekeeping, and forklift driving. These hands-on experiences gave me a broader perspective on how people live, work, and solve problems. 
-                    
-                    My travel experiences across the world to the countries like U.S., Mexico, China, and Australia has further sharpened my ability to collaborate with people from all walks of life, think on my feet and approach challenges creatively. What drives me isn't just the challenge of making things work, but the responsibility of making things that matter. 
-                    <br><br>
-                    I want to design tools and technologies that empower others - "things that make things" - while also being mindful of the people and environments they affect. 
-                    <br><br>
-                    I’m currently studying Mechatronics Engineering at <a href="https://www.canterbury.ac.nz/" target="_blank">University of Canterbury</a>, where I’ve learned to design, build, and integrate systems across mechanics, electronics, and embedded software through various projects seen below. 
-                    <br><br>
-                    These projects include writing real-time C firmware for STM32 microcontrollers, designing and simulating PCBs, integrating sensors and displays via I²C and SPI, and implementing control algorithms for dynamic systems. I’ve also developed CAD models in SolidWorks and Fusion 360, worked with 3D printing and CAM workflows, and gained hands-on skills in debugging, version control (Git), and system-level design. 
-                    <br><br>
-                    These experiences have given me practical skills in system-level thinking, debugging with oscilloscopes and logic analyzers, version control with Git, and cross-disciplinary collaboration in complex mechatronic projects.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+    <br/>
 
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>Experience & Achievements Overview</heading>
-                  <ul>
-                    <li><b>[Mar. 2025]</b> Began roles as Mechatronics Mentor and UniBuddy Ambassador at the University of Canterbury.</li>
-                    <li><b>[Feb. 2025]</b> Appointed Road Bike Representative for UC Bike Club, organizing weekly events and fostering inclusive participation.</li>
-                    <li><b>[Feb. 2025]</b> Completed summer research internship at Auckland Bioengineering Institute, designing soft valves for MHD soft robotics using electropermanent magnets.</li>
-                    <li><b>[Nov. 2024]</b> Rehired by Solution Dynamics for a second summer term in stores and forklift operations.</li>
-                    <li><b>[Oct. 2024]</b> Elected Secretary of UC Flight Club, managing communications and coordinating industry events.</li>
-                    <li><b>[Jul. 2024]</b> Awarded Ngāpuhi Education Scholarship in recognition of academic excellence and iwi contribution potential.</li>
-                    <li><b>[Jul. 2023]</b> Began role as Campus Tour Guide at the University of Canterbury.</li>
-                    <!-- Show More Split -->
-                    <a href="javascript:void(0);" onclick="display('more_news');" style="cursor:pointer;">---- show more ----</a>
-                    <div id="more_news" style="display:none;">
-                      
-                      <li><b>[Feb. 2023]</b> Began studies in Mechatronics Engineering at the University of Canterbury.</li>
-                      <li><b>[Feb. 2023]</b> Completed first term at <a href="https://solutiondynamics.com/" target="_blank" rel="noopener">Solution Dynamics</a> in logistics and forklift operations.</li>
-                      <li><b>[Oct. 2022]</b> Completed role at Lancer Industries (<a href="https://www.sealegs.com/" target="_blank" rel="noopener">SEALEGS</a>) as a boat builder specializing in Hypalon tubes.</li>
-                      <li><b>[Oct. 2022]</b> Concluded 7-year operation of The Bee Brothers & Co beekeeping business.</li>
-                      <li><b>[Mar. 2022]</b> Completed role at <a href="https://naturalroofingproducts.co.nz/" target="_blank" rel="noopener">Natural Roofing Products</a></li>
-                      <li><b>[Nov. 2021]</b> Completed role at <a href="https://www.facebook.com/AucklandFlooring/" target="_blank" rel="noopener">Auckland Flooring</a></li>
-                      
-                    </div>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+     <tr>
+      <td style="padding:2.5%;width:100%;vertical-align:middle">
+       <h2>
+        Skills and Interests
+       </h2>
+               <hr/>
+        <ul>
+          <li>Flying and building drones.</li>
+          <li>Outdoor activities (hiking, running, gym, sauna, cycling).</li>
+          <li>Reading books.</li>
+          <li>Bluegrass music (banjo and tenor banjo).</li>
+        </ul>
+      </td>
+     </tr>
+    </table>
 
 
 
-
-          
-<!-- Selected Projects -->
+     <!-- Awards -->
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               <tr>
                 <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>Selected Projects</heading>
-                  <ul style="list-style-type:none; padding-left:0;">
-                    <li>
-                      <div style="font-weight:bold; margin-top:10px; margin-bottom:4px;">Embedded Systems & Control</div>
-                      <ul style="list-style-type:disc; color:black; margin-bottom:12px;">
-                        <li><b>Step Counter (STM32):</b> Programmed a real-time step counting system using STM32 microcontroller and C in STM32CubeIDE. Integrated low-level sensor data processing and user feedback.</li>
-                        <li><b>UC Fun Kit Multiplayer Game:</b> Developed an interactive multiplayer game of rock-paper-scissors using IR communication, buttons, and OLED display; coded in C.</li>
-                        <li><b>Line Following Robot:</b> Designed and programmed a robot using custom PCB and microcontroller firmware in C. Placed 8th out of 38 teams with a time of 14.9 seconds.</li>
-                        <li><b>Elevator Control System:</b> Programmed a PLC to simulate elevator logic using ladder logic with PID control and SCAN algorithm for scheduling.</li>
-                      </ul>
-                    </li>
-                    <li>
-                      <div style="font-weight:bold; margin-top:18px; margin-bottom:4px;">CAD, CAM & Mechatronic Design</div>
-                      <ul style="list-style-type:disc; color:black; margin-bottom:12px;">
-                        <li><b>PCB Pick & Place Machine:</b> Designed custom SolidWorks parts and created G-code for CNC operation of a PCB pick-and-place machine.</li>
-                        <li><b>CNC Coaster Project:</b> Created a coaster design in SolidWorks, generated 3-axis CNC toolpaths using HSMWorks for mill manufacturing.</li>
-                        <li><b>Model Car (ENMT221 Project):</b> Designed and refined a 3D model of a functional car using SolidWorks.</li>
-                      </ul>
-                    </li>
-                    <li>
-                      <div style="font-weight:bold; margin-top:18px; margin-bottom:4px;">Rocketry & Aerospace Projects</div>
-                      <ul style="list-style-type:disc; color:black; margin-bottom:12px;">
-                        <li><b>Flight Computer – UC Aerospace Club:</b> Designed, assembled, and programmed a custom PCB flight computer using KiCad and embedded C for telemetry and control.</li>
-                        <li><b>Level 1 Rocket (UC Aerospace Club):</b> Collaborated in a multidisciplinary team to build and launch a fully functional rocket meeting Level 1 certification standards.</li>
-                      </ul>
-                    </li>
-                    <li>
-                      <div style="font-weight:bold; margin-top:18px; margin-bottom:4px;">Other Projects</div>
-                      <ul style="list-style-type:disc; color:black;">
-                        <li><b>RoboCup (ENMT301):</b> Programmed and built an autonomous robot for a competitive robotics challenge, applying embedded systems, sensor fusion, and design optimization.</li>
-                        <li><b>Automated Club Email System:</b> Developed an automated email distribution tool using Google Apps Script to streamline communication with all UC Flight club members.</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-
-
-
-
-
-
-
-
-          <!-- Projects work in developement
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>Projects & Resources</heading>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr onmouseout="malle_stop()" onmouseover="malle_start()">
-                <td style="padding:20px;width:30%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='malle_image'>
-                      <img src='images/moss.png' width="190">
-                    </div>
-                    <img src='images/moss.png' width="190">
-                  </div>
-                  <script type="text/javascript">
-                    function malle_start() {
-                      document.getElementById('malle_image').style.opacity = "1";
-                    }
-
-                    function malle_stop() {
-                      document.getElementById('malle_image').style.opacity = "0";
-                    }
-                    malle_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:70%;vertical-align:top">
-                  <a href="http://moss.fastnlp.top/">
-                    <papertitle>MOSS: A Conversational Language Model</papertitle>
-                  </a>
-                  <br>
-                  project led by <strong>Tianxiang Sun</strong>
-                  <p>
-                    MOSS is a conversational language model like ChatGPT. It is capable of following users' instructions
-                    to perform various natural language tasks including question answering, generating text, summarzing
-                    text, generating code, etc. MOSS is also able to challenge incorrect premises, and reject
-                    inappropriate requests. Here is a brief <a
-                      href="https://txsun1997.github.io/blogs/moss.html">introduction</a> to MOSS.
-                  </p>
-                </td>
-              </tr>
-
-              <tr onmouseout="malle_stop()" onmouseover="malle_start()">
-                <td style="padding:20px;width:30%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='malle_image'>
-                      <img src='images/LMaaS.png' width="190">
-                    </div>
-                    <img src='images/LMaaS.png' width="190">
-                  </div>
-                  <script type="text/javascript">
-                    function malle_start() {
-                      document.getElementById('malle_image').style.opacity = "1";
-                    }
-
-                    function malle_stop() {
-                      document.getElementById('malle_image').style.opacity = "0";
-                    }
-                    malle_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:70%;vertical-align:top">
-                  <a href="https://github.com/txsun1997/LMaaS-Papers">
-                    <papertitle>Paper List on Language-Model-as-a-Service (LMaaS)</papertitle>
-                  </a>
-                  <br>
-                  maintained by <strong>Tianxiang Sun</strong>
-                  <p>
-                    Pre-trained large language models (LLMs) such as GPT-3 are usually released as a service instead of
-                    open sourcing model weights. We call this scenario "Language-Model-as-a-Service (LMaaS)", where
-                    users can access the powerful LLMs through their inference APIs. We maintain a curated list of
-                    papers that fit into this scenario.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table> -->
-
-
-
-
-
-
-
-
-
-
-
-<!-- Awards -->
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>Awards</heading>
+                  <h2>Awards</h2>
                   <ul>
                     <li>
-                      <b>Ngāpuhi Education Scholarship (2024)</b><br>
-                      The Ngāpuhi Education Scholarship supports students of Ngāpuhi descent who are committed to academic success and aspire to contribute their knowledge and skills to the wellbeing and development of Ngāpuhi whānau, hapū, and iwi.
+                      <b>Ngāpuhi Education Scholarship (2024)</b>  The Ngāpuhi Education Scholarship supports students of Ngāpuhi descent who are  committed to academic success and aspire to contribute their knowledge and skills to the wellbeing and development of Ngāpuhi whānau, hapū, and iwi. <a href="data/Ngāpuhi-Education-Scholarship-Policy.pdf" target="_blank">[Scholarship Policy Document]</a>
                     </li>
                     <li>
-                      <b>NCEA Biology Scholarship (2018)</b><br>
-                      The NCEA Biology Scholarship is a prestigious award offered annually to New Zealand secondary school students who demonstrate exceptional ability in biology. The scholarship is designed to identify and reward students who show advanced understanding, critical thinking, and the ability to integrate and apply biological concepts to complex situations.
+                      NCEA Biology Scholarship (2018)<br>
                     </li>
                     <li>
-                      <b>Youth Excellence Award, <a href="https://northharbourclub.co.nz/aimes-awards/" target="_blank" rel="noopener noreferrer">North Harbour Club </a> AIMS awards (2015)</b><br>
-                      <em>Recognized for Innovation in Beekeeping</em>. Awarded $3,000 and a 3D printer (valued at $20,000) through the AIMES program.
-                      Used the funding to develop custom beekeeping tools that combined agriculture with emerging technologies.
-                      <a href="https://www.scoop.co.nz/stories/AK1511/S00398/north-harbours-youth-excellence-celebrated.htm" target="_blank" rel="noopener noreferrer">[Scoop News Article]</a>
+                      Youth Excellence Award, <a href="https://northharbourclub.co.nz/aimes-awards/" target="_blank" rel="noopener noreferrer">North Harbour Club </a> AIMS awards (2015)<br> <em>Recognized for Innovation in Beekeeping</em>. <a href="https://www.scoop.co.nz/stories/AK1511/S00398/north-harbours-youth-excellence-celebrated.htm" target="_blank" rel="noopener noreferrer">[Scoop News Article]</a>
                     </li>
                   </ul>
                 </td>
               </tr>
             </tbody>
           </table>
+
+
+
+
+              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <tr>
+       <td style="padding:2.5%;width:100%;vertical-align:middle">
+        <h2>
+        Contact
+        </h2>
+        <p>
+        <a href="https://profiles.canterbury.ac.nz/Blake-Tolmie">Faculty of Engineering</a>, The University of Canterbury, New Zealand
+        </p>
+        <p>
+        Email: blake.tolmie@canterbury.ac.nz
+        </p>
+        <p>
+        Phone: +64 22 476 1402
+        </p>
+       </td>
+      </tr>
+     </table>
+
 
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -321,21 +1415,26 @@
             </tbody>
           </table>
 
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:center;font-size:small;">
-                  Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's
-                    website</a>
-                </p>
-              </td>
-            </tr>
-          </table>
+     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+       <tr>
+        <td style="padding:0px">
+         <br/>
+         <p style="text-align:center;font-size:small;">
+          Design and source code from
+          <a href="https://jonbarron.info" style="font-size:small;">
+           Jon Barron's website
+          </a>
+         </p>
         </td>
-      </tr>
-  </table>
-</body>
+       </tr>
+      </table>
+     </table>
+    </table>
+   </td>
+  </tr>
+ </table>
+</div>
+  </body>
 
 </html>
