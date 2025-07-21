@@ -11,9 +11,21 @@
 
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/png" href="images/Blake/tab_icon_9.png">
+  
+<!-- styling remove 'Lato' if wanting the Ngapuhi a to look normal -->
+  <style>
+    body,
+    table,
+    td,
+    p,
+    ul,
+    li,
+    heading {
+      font-family: 'Lato', 'Segoe UI', Arial, Helvetica, sans-serif;
+    }
+  </style>
 
   <script type="text/javascript">
-
     function display(id) {
       var traget = document.getElementById(id);
       if (traget.style.display == "none") {
@@ -21,7 +33,7 @@
       } else {
         traget.style.display = "none";
       }
-    }  
+    }
   </script>
 </head>
 
@@ -85,22 +97,26 @@
             <tbody>
               <tr>
                 <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>News</heading>
+                  <heading>Experience & Achievements Overview</heading>
                   <ul>
+                    <li><b>[Mar. 2025]</b> Began roles as Mechatronics Mentor and UniBuddy Ambassador at the University of Canterbury.</li>
                     <li><b>[Feb. 2025]</b> Appointed Road Bike Representative for UC Bike Club, organizing weekly events and fostering inclusive participation.</li>
                     <li><b>[Feb. 2025]</b> Completed summer research internship at Auckland Bioengineering Institute, designing soft valves for MHD soft robotics using electropermanent magnets.</li>
                     <li><b>[Nov. 2024]</b> Rehired by Solution Dynamics for a second summer term in stores and forklift operations.</li>
                     <li><b>[Oct. 2024]</b> Elected Secretary of UC Flight Club, managing communications and coordinating industry events.</li>
                     <li><b>[Jul. 2024]</b> Awarded Ngāpuhi Education Scholarship in recognition of academic excellence and iwi contribution potential.</li>
+                    <li><b>[Jul. 2023]</b> Began role as Campus Tour Guide at the University of Canterbury.</li>
                     <!-- Show More Split -->
                     <a href="javascript:void(0);" onclick="display('more_news');" style="cursor:pointer;">---- show more ----</a>
                     <div id="more_news" style="display:none;">
-                      <li><b>[Oct. 2023]</b> Completed STM32-based real-time step counter project as part of embedded systems coursework.</li>
-                      <li><b>[Jul. 2023]</b> Began roles as Mechatronics Mentor and UniBuddy Ambassador at the University of Canterbury.</li>
-                      <li><b>[Feb. 2023]</b> Completed first term at Solution Dynamics in logistics and forklift operations.</li>
+                      
                       <li><b>[Feb. 2023]</b> Began studies in Mechatronics Engineering at the University of Canterbury.</li>
+                      <li><b>[Feb. 2023]</b> Completed first term at Solution Dynamics in logistics and forklift operations.</li>
                       <li><b>[Oct. 2022]</b> Completed role at Lancer Industries (SEALEGS) as a boat builder specializing in Hypalon tubes.</li>
                       <li><b>[Oct. 2022]</b> Concluded 7-year operation of The Bee Brothers & Co beekeeping business.</li>
+                      <li><b>[Mar. 2022]</b> Completed role at <a href="https://naturalroofingproducts.co.nz/" target="_blank" rel="noopener">Natural Roofing Products</a></li>
+                      <li><b>[Nov. 2021]</b> Completed role at <a href="https://www.facebook.com/AucklandFlooring/" target="_blank" rel="noopener">Auckland Flooring</a></li>
+                      
                     </div>
                   </ul>
                 </td>
@@ -109,6 +125,64 @@
           </table>
 
 
+
+
+
+          
+<!-- Selected Projects -->
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:100%;vertical-align:middle">
+                  <heading>Selected Projects</heading>
+                  <ul style="list-style-type:none; padding-left:0;">
+                    <li>
+                      <div style="font-weight:bold; margin-top:10px; margin-bottom:4px;">Embedded Systems & Control</div>
+                      <ul style="list-style-type:disc; color:black; margin-bottom:12px;">
+                        <li><b>Step Counter (STM32):</b> Programmed a real-time step counting system using STM32 microcontroller and C in STM32CubeIDE. Integrated low-level sensor data processing and user feedback.</li>
+                        <li><b>UC Fun Kit Multiplayer Game:</b> Developed an interactive multiplayer game of rock-paper-scissors using IR communication, buttons, and OLED display; coded in C.</li>
+                        <li><b>Line Following Robot:</b> Designed and programmed a robot using custom PCB and microcontroller firmware in C. Placed 8th out of 38 teams with a time of 14.9 seconds.</li>
+                        <li><b>Elevator Control System:</b> Programmed a PLC to simulate elevator logic using ladder logic with PID control and SCAN algorithm for scheduling.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div style="font-weight:bold; margin-top:18px; margin-bottom:4px;">CAD, CAM & Mechatronic Design</div>
+                      <ul style="list-style-type:disc; color:black; margin-bottom:12px;">
+                        <li><b>PCB Pick & Place Machine:</b> Designed custom SolidWorks parts and created G-code for CNC operation of a PCB pick-and-place machine.</li>
+                        <li><b>CNC Coaster Project:</b> Created a coaster design in SolidWorks, generated 3-axis CNC toolpaths using HSMWorks for mill manufacturing.</li>
+                        <li><b>Model Car (ENMT221 Project):</b> Designed and refined a 3D model of a functional car using SolidWorks.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div style="font-weight:bold; margin-top:18px; margin-bottom:4px;">Rocketry & Aerospace Projects</div>
+                      <ul style="list-style-type:disc; color:black; margin-bottom:12px;">
+                        <li><b>Flight Computer – UC Aerospace Club:</b> Designed, assembled, and programmed a custom PCB flight computer using KiCad and embedded C for telemetry and control.</li>
+                        <li><b>Level 1 Rocket (UC Aerospace Club):</b> Collaborated in a multidisciplinary team to build and launch a fully functional rocket meeting Level 1 certification standards.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div style="font-weight:bold; margin-top:18px; margin-bottom:4px;">Other Projects</div>
+                      <ul style="list-style-type:disc; color:black;">
+                        <li><b>RoboCup (ENMT301):</b> Programmed and built an autonomous robot for a competitive robotics challenge, applying embedded systems, sensor fusion, and design optimization.</li>
+                        <li><b>Automated Club Email System:</b> Developed an automated email distribution tool using Google Apps Script to streamline communication with all UC Flight club members.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+
+
+
+
+
+
+
+          <!-- Projects work in developement
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
@@ -191,8 +265,19 @@
                 </td>
               </tr>
             </tbody>
-          </table>
+          </table> -->
 
+
+
+
+
+
+
+
+
+
+
+<!-- Awards -->
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
@@ -207,6 +292,12 @@
                     <li>
                       <b>NCEA Biology Scholarship (2018)</b><br>
                       The NCEA Biology Scholarship is a prestigious award offered annually to New Zealand secondary school students who demonstrate exceptional ability in biology. The scholarship is designed to identify and reward students who show advanced understanding, critical thinking, and the ability to integrate and apply biological concepts to complex situations.
+                    </li>
+                    <li>
+                      <b>Youth Excellence Award, <a href="https://northharbourclub.co.nz/aimes-awards/" target="_blank" rel="noopener noreferrer">North Harbour Club </a> AIMS awards (2015)</b><br>
+                      <em>Recognized for Innovation in Beekeeping</em>. Awarded $3,000 and a 3D printer (valued at $20,000) through the AIMES program.
+                      Used the funding to develop custom beekeeping tools that combined agriculture with emerging technologies.
+                      <a href="https://www.scoop.co.nz/stories/AK1511/S00398/north-harbours-youth-excellence-celebrated.htm" target="_blank" rel="noopener noreferrer">[Scoop News Article]</a>
                     </li>
                   </ul>
                 </td>
