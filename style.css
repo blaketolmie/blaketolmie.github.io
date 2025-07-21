@@ -1,0 +1,125 @@
+a {
+    color: #1772d0;
+    text-decoration: none
+}
+
+a:link {
+    color: #bf5700
+}
+
+a:visited {
+    color: #bf5700
+}
+
+a:focus,a:hover {
+    color: #333f48;
+    text-decoration: none
+}
+
+body,td,th,tr,p,a {
+    font-family: "Merriweather","PT Serif",Georgia,"Times New Roman",serif;
+    font-size: 16px;
+    font-display: auto;
+    color: #333;
+    line-height: 1.5
+}
+
+strong {
+    font-family: "Merriweather","PT Serif",Georgia,"Times New Roman",serif;
+    font-size: 16px;
+    font-display: auto;
+    font-weight: 50px;
+    color: #444
+}
+
+h2 {
+    font-family: "Merriweather","PT Serif",Georgia,"Times New Roman",serif;
+    font-size: 22px;
+    font-display: auto;
+    font-weight: normal;
+    padding: 0px;
+    margin: 0px;
+    display: inline;
+    color: #333
+}
+
+h3 {
+    font-family: "Merriweather","PT Serif",Georgia,"Times New Roman",serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-display: auto;
+    padding: 0px;
+    margin: 0px;
+    display: inline;
+    color: #333
+}
+
+h4 {
+    font-family: "Merriweather","PT Serif",Georgia,"Times New Roman",serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-display: auto;
+    padding: 0px;
+    margin: 0px;
+    display: inline;
+    color: #333
+}
+
+h1 {
+    font-family: "Merriweather","PT Serif",Georgia,"Times New Roman",serif;
+    font-size: 32px;
+    font-weight: normal;
+    font-display: auto;
+    text-align: center;
+    padding: 0px;
+    margin-block-start:14px;margin-block-end:14px;margin-left: 0px;
+    margin-right: 0px;
+    color: #333
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    max-width: 800px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.35), rgba(0,0,0,0.25), transparent)
+}
+
+.one {
+    width: 160px;
+    height: 160px;
+    position: relative
+}
+
+.two {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out
+}
+
+.fade {
+    transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out
+}
+
+span.highlight {
+    background-color: #ffffd0
+}
+
+.pub-entry {
+    transition: background-color 0.3s ease
+}
+
+.pub-entry:hover {
+    background-color: #ededed
+}
+
+.img-fluid,.img-thumbnail {
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center
+}
